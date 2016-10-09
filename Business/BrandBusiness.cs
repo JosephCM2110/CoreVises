@@ -33,7 +33,7 @@ namespace Business
 
         public int deleteBrand(int idBrand)
         {
-            return this.brandData.deleteBrand(idBrand);
+            return this.deleteBrand(idBrand);
         }
 
         public DataSet getAllBrands()

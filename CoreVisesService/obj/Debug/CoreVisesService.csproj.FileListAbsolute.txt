@@ -2,9 +2,6 @@ C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\CoreVisesService.dll.config
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\CoreVisesService.dll
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\CoreVisesService.pdb
-C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Business.dll
-C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Data.dll
-C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Domain.dll
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Microsoft.AI.PerfCounterCollector.dll
