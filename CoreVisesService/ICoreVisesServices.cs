@@ -5,14 +5,19 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using Domain;
+using System.ServiceModel.Web;
+using System.Data;
 
 namespace CoreVisesService
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "ICoreVisesServices" in both code and config file together.
     [ServiceContract]
     public interface ICoreVisesServices
     {
         [OperationContract]
-        int insertAdministrator(Administrator administrator);
+        [WebInvoke(Method = "GET",
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "/getAdministrators")]
+        DataSet getAdministrators();
     }
 }

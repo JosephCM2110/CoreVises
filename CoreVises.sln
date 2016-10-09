@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreVisesService", "CoreVisesService\CoreVisesService.csproj", "{8232C897-76BD-4DEF-AC3A-373911D5BF63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{5A3FE274-40DA-411A-B602-D83C2597DDE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8232C897-76BD-4DEF-AC3A-373911D5BF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8232C897-76BD-4DEF-AC3A-373911D5BF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8232C897-76BD-4DEF-AC3A-373911D5BF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A3FE274-40DA-411A-B602-D83C2597DDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3FE274-40DA-411A-B602-D83C2597DDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3FE274-40DA-411A-B602-D83C2597DDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3FE274-40DA-411A-B602-D83C2597DDE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Data;
 using Domain;
+using System.Data;
 
 namespace Business
 {
@@ -38,6 +39,11 @@ namespace Business
         public int verifyExistsAdministrator(string nameUser, string passwordUser)
         {
             return this.administatorData.verifyExistsAdministrator(nameUser, passwordUser);
+        }
+
+        public DataSet getAdministrators()
+        {
+            return this.administatorData.getAdministrators();
         }
 
         public string ConnectionString
