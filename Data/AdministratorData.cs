@@ -133,6 +133,7 @@ namespace Data
             return answer;
         }
 
+<<<<<<< HEAD
         public DataSet getAdministrators()
         {
             //conexion con la bd
@@ -160,6 +161,9 @@ namespace Data
 
             return datasetProperties;
         }
+=======
+
+>>>>>>> origin/master
 
     }
 }

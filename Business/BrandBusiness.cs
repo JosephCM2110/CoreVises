@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Data;
 using Domain;
+using System.Data;
 
 namespace Business
 {
@@ -32,7 +33,12 @@ namespace Business
 
         public int deleteBrand(int idBrand)
         {
-            return this.deleteBrand(idBrand);
+            return this.brandData.deleteBrand(idBrand);
+        }
+
+        public DataSet getAllBrands()
+        {
+            return this.brandData.getAllBrands();
         }
 
         public string ConnectionString

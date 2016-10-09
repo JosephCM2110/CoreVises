@@ -95,5 +95,28 @@ namespace Data
 
             return answer;
         }
+
+        public DataSet getAllBrands()
+        {
+
+            SqlConnection sqlConn = new SqlConnection(this.connectionString);
+
+            string query = "select * from TBrand order by(name) ASC ";
+
+            SqlDataAdapter sqlAdpaterBank = new SqlDataAdapter();
+            sqlAdpaterBank.SelectCommand = new SqlCommand();
+            sqlAdpaterBank.SelectCommand.CommandText = query;
+            sqlAdpaterBank.SelectCommand.Connection = sqlConn;
+
+            DataSet dsBrand = new DataSet();
+
+            sqlAdpaterBank.Fill(dsBrand, "TBrand");
+
+            sqlAdpaterBank.SelectCommand.Connection.Close();
+
+            return dsBrand;
+
+
+        }
     }
 }
