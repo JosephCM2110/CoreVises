@@ -70,3 +70,9 @@ C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Domain.dll
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Business.pdb
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Data.pdb
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Domain.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Business.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Domain.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Data.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Business.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Domain.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Data.pdb

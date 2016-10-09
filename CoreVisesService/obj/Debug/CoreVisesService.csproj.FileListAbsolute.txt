@@ -45,3 +45,6 @@ C:\Users\Brayan\Source\Repos\CoreVises\CoreVisesService\bin\Microsoft.Applicatio
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVisesService\obj\Debug\CoreVisesService.csprojResolveAssemblyReference.cache
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVisesService\obj\Debug\CoreVisesService.dll
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVisesService\obj\Debug\CoreVisesService.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Business.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Data.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVisesService\bin\Domain.dll
