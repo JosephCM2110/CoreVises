@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CoreVises.Presentation
 {
-    public partial class DeleteBrand : System.Web.UI.Page
+    public partial class AdminMenu : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

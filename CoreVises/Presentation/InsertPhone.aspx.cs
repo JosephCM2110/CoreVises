@@ -44,6 +44,7 @@ namespace CoreVises.Presentation
             phone.InternalMemory = txtInternalMemory.Text;
             phone.ExternalMemory = txtExternalMemory.Text;
             phone.Pixels = Int32.Parse(txtPixels.Text);
+            phone.Resolution = txtResolution.Text;
             phone.Flash = Int32.Parse(ddlFlash.SelectedValue);
             phone.Price = Int32.Parse(txtPrice.Text);
             phone.Quantity = Int32.Parse(txtQuantity.Text);

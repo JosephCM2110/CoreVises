@@ -27,14 +27,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="/Images/logo.png" />
+                        <img src="/Images/logo.png"  width="70" height="70" />
 
                     </a>
                     
                 </div>
               
                 <span class="logout-spn" >
-                  <a href="#" style="color:#fff;">LOGOUT</a>  
+                  <a href="../index.aspx" style="color:#fff;">LOGOUT</a>  
 
                 </span>
             </div>
@@ -44,18 +44,21 @@
                 <ul class="nav" id="main-menu">
 
                     <li class="active-link">
-                        <a href="index.html" ><i class="fa fa-edit  "></i>Administrators</a>
+                        <a href="AdminMenu.aspx" ><i class="fa fa-edit  "></i>Administrators</a>
                     </li>
 
                     <li>
-                        <a href="ui.html"><i class="fa fa-edit "></i>Clients</a>
+                        <a href="UpdateClient.aspx"><i class="fa fa-edit "></i>Clients</a>
                     </li>
                     <li>
-                        <a href="blank.html"><i class="fa fa-edit "></i>Brands</a>
+                        <a href="BrandMenu.aspx"><i class="fa fa-edit "></i>Brands</a>
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-edit "></i>Phones</a>
+                        <a href="PhoneMenu.aspx"><i class="fa fa-edit "></i>Phones</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit "></i>Reports</a>
                     </li>
                 </ul>
 

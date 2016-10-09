@@ -10,6 +10,6 @@
 namespace CoreVises.Presentation {
     
     
-    public partial class DeletePhone {
+    public partial class AdminMenu {
     }
 }

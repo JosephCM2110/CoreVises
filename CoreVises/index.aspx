@@ -27,7 +27,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="/Images/logo.png" />
+                        <img src="/Images/logo.png" width="70" height="70" />
 
                     </a>
                     
@@ -44,22 +44,22 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                  
-
-
                     <li class="active-link">
-                        <a href="index.html" ><i class="fa fa-edit  "></i>Administrators</a>
-                    </li>
-                   
-
-                    <li>
-                        <a href="ui.html"><i class="fa fa-edit "></i>Clients</a>
-                    </li>
-                    <li>
-                        <a href="blank.html"><i class="fa fa-edit "></i>Brands</a>
+                        <a href="./Presentation/AdminMenu.aspx" ><i class="fa fa-edit  "></i>Administrators</a>
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-edit "></i>Phones</a>
+                        <a href="./Presentation/UpdateClient.aspx"><i class="fa fa-edit "></i>Clients</a>
+                    </li>
+                    <li>
+                        <a href="./Presentation/BrandMenu.aspx"><i class="fa fa-edit "></i>Brands</a>
+                    </li>
+
+                    <li>
+                        <a href="./Presentation/PhoneMenu.aspx"><i class="fa fa-edit "></i>Phones</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit "></i>Reports</a>
                     </li>
                 </ul>
                             </div>

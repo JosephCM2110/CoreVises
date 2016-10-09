@@ -11,5 +11,32 @@ namespace CoreVises.Presentation {
     
     
     public partial class UpdateAdministrator {
+        
+        /// <summary>
+        /// manage_Administrator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm manage_Administrator;
+        
+        /// <summary>
+        /// gvAdministrator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvAdministrator;
+        
+        /// <summary>
+        /// sdsAdminin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsAdminin;
     }
 }

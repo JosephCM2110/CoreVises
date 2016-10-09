@@ -10,33 +10,33 @@
 namespace CoreVises.Presentation {
     
     
-    public partial class DeleteAdministrator {
+    public partial class UpdateClient {
         
         /// <summary>
-        /// delete_Admin control.
+        /// manage_Client control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm delete_Admin;
+        protected global::System.Web.UI.HtmlControls.HtmlForm manage_Client;
         
         /// <summary>
-        /// txtName control.
+        /// gvClient control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
+        protected global::System.Web.UI.WebControls.GridView gvClient;
         
         /// <summary>
-        /// TextBox1 control.
+        /// sdsClient control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsClient;
     }
 }
