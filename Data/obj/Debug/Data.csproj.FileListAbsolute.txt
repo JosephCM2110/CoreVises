@@ -5,3 +5,10 @@ C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\Data\bin\Debug\Do
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\Data\obj\Debug\Data.dll
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\Data\obj\Debug\Data.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Data\bin\Debug\Data.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Data\bin\Debug\Data.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Data\bin\Debug\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Data\bin\Debug\Domain.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\Data\obj\Debug\Data.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Data\obj\Debug\Data.pdb

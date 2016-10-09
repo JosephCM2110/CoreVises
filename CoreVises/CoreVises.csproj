@@ -94,10 +94,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Presentation\base.Master" />
+    <None Include="Properties\PublishProfiles\brayan.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,12 +109,121 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="JS\ai.0.22.9-build00167.js" />
+    <Content Include="JS\ai.0.22.9-build00167.min.js" />
+    <Content Include="Presentation\DeleteAdministrator.aspx" />
+    <Content Include="Presentation\DeleteBrand.aspx" />
+    <Content Include="Presentation\DeletePhone.aspx" />
+    <Content Include="Presentation\InsertAdministrator.aspx" />
+    <Content Include="Presentation\InsertBrand.aspx" />
+    <Content Include="Presentation\InsertPhone.aspx" />
+    <Content Include="Presentation\Principal.aspx" />
+    <Content Include="Presentation\UpdateAdministrator.aspx" />
+    <Content Include="Presentation\UpdateBrand.aspx" />
+    <Content Include="Presentation\UpdatePhone.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\base.Master.cs">
+      <DependentUpon>base.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\base.Master.designer.cs">
+      <DependentUpon>base.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DeleteAdministrator.aspx.cs">
+      <DependentUpon>DeleteAdministrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\DeleteAdministrator.aspx.designer.cs">
+      <DependentUpon>DeleteAdministrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DeleteBrand.aspx.cs">
+      <DependentUpon>DeleteBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\DeleteBrand.aspx.designer.cs">
+      <DependentUpon>DeleteBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DeletePhone.aspx.cs">
+      <DependentUpon>DeletePhone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\DeletePhone.aspx.designer.cs">
+      <DependentUpon>DeletePhone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\InsertAdministrator.aspx.cs">
+      <DependentUpon>InsertAdministrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\InsertAdministrator.aspx.designer.cs">
+      <DependentUpon>InsertAdministrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\InsertBrand.aspx.cs">
+      <DependentUpon>InsertBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\InsertBrand.aspx.designer.cs">
+      <DependentUpon>InsertBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\InsertPhone.aspx.cs">
+      <DependentUpon>InsertPhone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\InsertPhone.aspx.designer.cs">
+      <DependentUpon>InsertPhone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UpdateAdministrator.aspx.cs">
+      <DependentUpon>UpdateAdministrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\UpdateAdministrator.aspx.designer.cs">
+      <DependentUpon>UpdateAdministrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UpdateBrand.aspx.cs">
+      <DependentUpon>UpdateBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\UpdateBrand.aspx.designer.cs">
+      <DependentUpon>UpdateBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UpdatePhone.aspx.cs">
+      <DependentUpon>UpdatePhone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\UpdatePhone.aspx.designer.cs">
+      <DependentUpon>UpdatePhone.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="Images\" />
+    <Folder Include="Style\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{836c20b8-7c80-4c46-a0eb-11273fb17ee9}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{F995E670-E92A-42A2-BA45-08CFE39CC6F6}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

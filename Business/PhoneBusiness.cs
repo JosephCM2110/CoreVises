@@ -8,7 +8,7 @@ using Domain;
 
 namespace Business
 {
-    class PhoneBusiness
+    public class PhoneBusiness
     {
         private string connectionString;
         private PhoneData phoneData;
