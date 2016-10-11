@@ -1,0 +1,9 @@
+C:\Users\Brayan\Source\Repos\CoreVises\Business\bin\Release\Business.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Business\bin\Release\Business.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Business\bin\Release\Data.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Business\bin\Release\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Business\bin\Release\Data.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Business\bin\Release\Domain.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Business\obj\Release\Business.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\Business\obj\Release\Business.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Business\obj\Release\Business.pdb

@@ -31,3 +31,9 @@ C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.CodeDom.Providers
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Release\CoreVises.csprojResolveAssemblyReference.cache
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Release\CoreVises.dll
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Release\CoreVises.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Business.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Data.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Business.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Domain.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Data.pdb

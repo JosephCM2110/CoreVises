@@ -17,5 +17,23 @@ namespace CoreVisesService
             AdministratorBusiness ab = new AdministratorBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
             return ab.getAdministrators();
         }
+
+        public string GetData(int value)
+        {
+            return string.Format("You entered: {0}", value);
+        }
+
+        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        {
+            if (composite == null)
+            {
+                throw new ArgumentNullException("composite");
+            }
+            if (composite.BoolValue)
+            {
+                composite.StringValue += "Suffix";
+            }
+            return composite;
+        }
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\bin\Release\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\bin\Release\Domain.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Release\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Release\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Release\Domain.pdb
