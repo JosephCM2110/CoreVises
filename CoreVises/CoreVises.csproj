@@ -96,6 +96,9 @@
   <ItemGroup>
     <Content Include="Images\logo.png" />
     <Content Include="index.aspx" />
+    <Content Include="JS\bootstrap.min.js" />
+    <Content Include="JS\custom.js" />
+    <Content Include="JS\jquery-1.10.2.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -40,6 +40,15 @@ namespace CoreVises.Presentation {
         protected global::System.Web.UI.WebControls.TextBox txtModel;
         
         /// <summary>
+        /// emptyModel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emptyModel;
+        
+        /// <summary>
         /// txtInternalMemory control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace CoreVises.Presentation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtInternalMemory;
+        
+        /// <summary>
+        /// emptyInternalMemory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emptyInternalMemory;
         
         /// <summary>
         /// txtExternalMemory control.
@@ -58,6 +76,15 @@ namespace CoreVises.Presentation {
         protected global::System.Web.UI.WebControls.TextBox txtExternalMemory;
         
         /// <summary>
+        /// emptyExternalMemory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emptyExternalMemory;
+        
+        /// <summary>
         /// txtPixels control.
         /// </summary>
         /// <remarks>
@@ -65,6 +92,24 @@ namespace CoreVises.Presentation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPixels;
+        
+        /// <summary>
+        /// emptyPixels control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emptyPixels;
+        
+        /// <summary>
+        /// txtP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator txtP;
         
         /// <summary>
         /// ddlFlash control.
@@ -85,6 +130,15 @@ namespace CoreVises.Presentation {
         protected global::System.Web.UI.WebControls.TextBox txtResolution;
         
         /// <summary>
+        /// emptyResolution control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emptyResolution;
+        
+        /// <summary>
         /// txtPrice control.
         /// </summary>
         /// <remarks>
@@ -94,6 +148,24 @@ namespace CoreVises.Presentation {
         protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
+        /// emptyPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emptyPrice;
+        
+        /// <summary>
+        /// txtPr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator txtPr;
+        
+        /// <summary>
         /// txtQuantity control.
         /// </summary>
         /// <remarks>
@@ -101,6 +173,24 @@ namespace CoreVises.Presentation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtQuantity;
+        
+        /// <summary>
+        /// emptyQuantity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emptyQuantity;
+        
+        /// <summary>
+        /// txtQ control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator txtQ;
         
         /// <summary>
         /// btnAccept control.

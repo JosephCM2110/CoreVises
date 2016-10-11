@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\Service</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>10/11/2016 13:04:51</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>10/11/2016 13:04:51</publishTime>
+    </File>
+    <File Include="bin/Business.dll">
+      <publishTime>10/11/2016 08:45:43</publishTime>
+    </File>
+    <File Include="bin/Data.dll">
+      <publishTime>10/11/2016 08:45:43</publishTime>
+    </File>
+    <File Include="bin/Domain.dll">
+      <publishTime>10/11/2016 08:45:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>09/10/2016 11:06:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>06/06/2016 15:40:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/06/2016 10:45:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/06/2016 10:42:24</publishTime>
+    </File>
+    <File Include="bin/Service.dll">
+      <publishTime>10/11/2016 13:08:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/11/2016 13:04:52</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.19-build00125.js">
+      <publishTime>10/11/2016 13:04:52</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.19-build00125.min.js">
+      <publishTime>10/11/2016 13:04:52</publishTime>
+    </File>
+    <File Include="Service1.svc">
+      <publishTime>10/11/2016 13:04:42</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/11/2016 13:10:23</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -31,7 +31,7 @@
                     </button>
                     <a class="navbar-brand" href="#">
                         <img src="/Images/logo.png" width="70" height="70" />
-
+                        <%--  --%>
                     </a>
                     
                 </div>
@@ -56,6 +56,9 @@
                                 <asp:Label runat="server" Text="User Name:"></asp:Label>
                                 <br />
                                 <asp:TextBox ID="txtUser" runat="server" Height="27px" Width="485px"></asp:TextBox><br />
+                                <asp:RequiredFieldValidator ID="emptytxtUser" runat="server" ErrorMessage="Write the user name."
+                                    ControlToValidate="txtUser" Display="Dynamic" Text="*empty field" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
                                 <br />
                             </td>
 
@@ -65,7 +68,10 @@
                                 <asp:Label runat="server" Text="Password:"></asp:Label>
                                 <br />
                                 <asp:TextBox ID="txtPassword" runat="server" Height="27px" Width="485px"></asp:TextBox><br />
-                                <br />
+                                <asp:RequiredFieldValidator ID="emptytxtPassword" runat="server" ErrorMessage="Write the password."
+                                    ControlToValidate="txtPassword" Display="Dynamic" Text="*empty field" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                                <br/>
                             </td>
                         </tr>
                         <tr>
@@ -76,7 +82,7 @@
                         <tr>
                             <td>
                                 <br />
-                                <asp:Label ForeColor="Red"   ID="lblMessage" runat="server" Text=""></asp:Label><br />
+                                <asp:Label ForeColor="Red" ID="lblMessage" runat="server" Text=""></asp:Label><br />
                             </td>
                         </tr>
                     </table>

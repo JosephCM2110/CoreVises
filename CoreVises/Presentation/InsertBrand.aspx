@@ -7,7 +7,6 @@
                     <h2>Create Brand</h2>
                 </div>
             </div>
-            <hr />
             <div class="row text-center pad-top">
                 <form id="create_Brand" runat="server">
                     <table style="width: 100%;">
@@ -16,6 +15,12 @@
                                 <asp:Label runat="server" Text="Name:"></asp:Label>
                                 <br />
                                 <asp:TextBox ID="txtName" runat="server" Height="27px" Width="485px"></asp:TextBox><br />
+                                <asp:RequiredFieldValidator ID="emptyName" runat="server" 
+                                    ControlToValidate="txtName" Display="Dynamic" Text="*empty field" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="txtNameEx" runat="server" ErrorMessage="You can only write letters"
+                                    ControlToValidate="txtName" ValidationExpression="^[a-zA-Z\s]*$" ForeColor="Red" Display="Dynamic">
+                                </asp:RegularExpressionValidator>
                                 <br />
                             </td>
 
