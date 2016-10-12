@@ -1,0 +1,117 @@
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\ApplicationInsights.config
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\csc.exe
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\vbc.exe
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\VBCSCompiler.exe
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\CoreVises.dll.config
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\CoreVises.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\CoreVises.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.Web.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.ApplicationInsights.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.Web.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.ApplicationInsights.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\obj\Debug\CoreVises.csprojResolveAssemblyReference.cache
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\obj\Debug\CoreVises.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\obj\Debug\CoreVises.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\ApplicationInsights.config
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\csc.exe
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\vbc.exe
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\VBCSCompiler.exe
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\CoreVises.dll.config
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\CoreVises.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\CoreVises.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.Web.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.Web.xml
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Debug\CoreVises.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Debug\CoreVises.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Debug\CoreVises.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Business.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Data.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Business.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Data.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Domain.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Business.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Domain.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Data.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Business.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Domain.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\CoreVises\bin\Data.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\ApplicationInsights.config
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\csc.exe
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\vbc.exe
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\VBCSCompiler.exe
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\CoreVises.dll.config
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\CoreVises.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\CoreVises.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Business.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Domain.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.Web.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.ApplicationInsights.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Data.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Business.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Domain.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.Web.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.ApplicationInsights.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\bin\Data.pdb
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\obj\Debug\CoreVises.csprojResolveAssemblyReference.cache
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\obj\Debug\CoreVises.dll
+C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\CoreVises\obj\Debug\CoreVises.pdb

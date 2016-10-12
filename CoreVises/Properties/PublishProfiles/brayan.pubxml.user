@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\CoreVises</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="bin/Business.dll">
+      <publishTime>10/11/2016 08:45:43</publishTime>
+    </File>
+    <File Include="bin/CoreVises.dll">
+      <publishTime>10/11/2016 10:11:20</publishTime>
+    </File>
+    <File Include="bin/Data.dll">
+      <publishTime>10/11/2016 08:45:43</publishTime>
+    </File>
+    <File Include="bin/Domain.dll">
+      <publishTime>10/11/2016 08:45:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>10/09/2016 11:06:40</publishTime>
+    </File>
+    <File Include="HtmlPage1.html">
+      <publishTime>10/11/2016 09:51:40</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>10/09/2016 14:31:06</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>10/11/2016 08:37:42</publishTime>
+    </File>
+    <File Include="JS/ai.0.22.9-build00167.js">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="JS/ai.0.22.9-build00167.min.js">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="Presentation/AdminMenu.aspx">
+      <publishTime>10/09/2016 14:16:08</publishTime>
+    </File>
+    <File Include="Presentation/base.Master">
+      <publishTime>10/09/2016 14:36:10</publishTime>
+    </File>
+    <File Include="Presentation/BrandMenu.aspx">
+      <publishTime>10/09/2016 14:13:34</publishTime>
+    </File>
+    <File Include="Presentation/InsertAdministrator.aspx">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="Presentation/InsertBrand.aspx">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="Presentation/InsertPhone.aspx">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="Presentation/PhoneMenu.aspx">
+      <publishTime>10/09/2016 14:12:21</publishTime>
+    </File>
+    <File Include="Presentation/Principal.aspx">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="Presentation/UpdateAdministrator.aspx">
+      <publishTime>10/09/2016 13:50:23</publishTime>
+    </File>
+    <File Include="Presentation/UpdateBrand.aspx">
+      <publishTime>10/09/2016 12:44:36</publishTime>
+    </File>
+    <File Include="Presentation/UpdateClient.aspx">
+      <publishTime>10/09/2016 13:51:04</publishTime>
+    </File>
+    <File Include="Presentation/UpdatePhone.aspx">
+      <publishTime>10/09/2016 13:50:51</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>10/08/2016 19:02:18</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>10/08/2016 19:02:18</publishTime>
+    </File>
+    <File Include="Style/bootstrap.css">
+      <publishTime>10/10/2016 11:17:43</publishTime>
+    </File>
+    <File Include="Style/custom.css">
+      <publishTime>10/09/2016 14:35:05</publishTime>
+    </File>
+    <File Include="Style/font-awesome.css">
+      <publishTime>10/09/2016 11:06:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/11/2016 09:42:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
