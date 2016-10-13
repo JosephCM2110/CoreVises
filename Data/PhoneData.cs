@@ -39,6 +39,7 @@ namespace Data
             cmdInsert.Parameters.Add(new SqlParameter("@resolution", phone.Resolution));
             cmdInsert.Parameters.Add(new SqlParameter("@price", phone.Price));
             cmdInsert.Parameters.Add(new SqlParameter("@quantity", phone.Quantity));
+            cmdInsert.Parameters.Add(new SqlParameter("@imagePhone", phone.Image));
             SqlParameter parameterCode = new SqlParameter("@idPhone", SqlDbType.Int);
             parameterCode.Direction = ParameterDirection.Output;
             cmdInsert.Parameters.Add(parameterCode);
@@ -74,6 +75,7 @@ namespace Data
             cmdInsert.Parameters.Add(new SqlParameter("@price", phone.Price));
             cmdInsert.Parameters.Add(new SqlParameter("@quantity", phone.Quantity));
             cmdInsert.Parameters.Add(new SqlParameter("@idPhone", phone.Quantity));
+            cmdInsert.Parameters.Add(new SqlParameter("@imagePhone", phone.Image));
             SqlParameter parameterCode = new SqlParameter("@state", SqlDbType.Int);
             parameterCode.Direction = ParameterDirection.Output;
             cmdInsert.Parameters.Add(parameterCode);

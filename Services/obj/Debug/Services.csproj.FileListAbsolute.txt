@@ -30,3 +30,35 @@ C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\Ser
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\Services\bin\System.Net.Http.Formatting.xml
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\Services\bin\System.Web.Http.xml
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\Services\bin\System.Web.Http.WebHost.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Services.dll.config
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Services.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Services.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Business.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.Web.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Newtonsoft.Json.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\System.Net.Http.Formatting.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\System.Web.Http.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\System.Web.Http.WebHost.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Data.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Business.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.Web.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Newtonsoft.Json.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\System.Net.Http.Formatting.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\System.Web.Http.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\System.Web.Http.WebHost.xml
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Data.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Domain.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Debug\Services.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Debug\Services.pdb

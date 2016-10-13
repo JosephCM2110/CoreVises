@@ -18,8 +18,10 @@ namespace CoreVises.Presentation
             if (!Page.IsPostBack)
             {
                 fillDDL();
+               
             }
             this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
+            System.Console.WriteLine("What is your name: ");
         }
 
         public void fillDDL()
@@ -48,6 +50,16 @@ namespace CoreVises.Presentation
             phone.Flash = Int32.Parse(ddlFlash.SelectedValue);
             phone.Price = Int32.Parse(txtPrice.Text);
             phone.Quantity = Int32.Parse(txtQuantity.Text);
+            phone.Image = "../Images/Phones/" + fileImage.FileName;
+            try
+            {
+                fileImage.SaveAs(Server.MapPath("~/Images/Phones/") + fileImage.FileName);
+            }
+            catch
+            {
+                
+            }
+
             string conn = "Data Source=163.178.107.130;Initial Catalog=KeggPhones;User ID=sqlserver;Password=saucr.12";
             PhoneBusiness phoneB = new PhoneBusiness(conn);
             phoneB.insertPhone(phone);

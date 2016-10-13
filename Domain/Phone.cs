@@ -18,7 +18,8 @@ namespace Domain
         private int flash;
         private string resolution;
         private int price;
-        private int quantity;       
+        private int quantity;
+        private string image;     
 
         public Phone()
         {
@@ -32,11 +33,12 @@ namespace Domain
             this.Resolution = "";
             this.Price = -1;
             this.Quantity = -1;
+            this.Image = "";
         }
 
         public Phone(int idPhone, Brand brand, string model, string internalMemory,
             string externalMemory, int pixels, int flash, string resolution,
-            int price, int quantity)
+            int price, int quantity,string image)
         {
             this.IdPhone = idPhone;
             this.Brand = brand;
@@ -48,6 +50,7 @@ namespace Domain
             this.Resolution = resolution;
             this.Price = price;
             this.Quantity = quantity;
+            this.Image = image;
         }
 
         public int IdPhone
@@ -180,5 +183,17 @@ namespace Domain
             }
         }
 
+        public string Image
+        {
+            get
+            {
+                return image;
+            }
+
+            set
+            {
+                image = value;
+            }
+        }
     }
 }

@@ -31,6 +31,10 @@
                         <asp:BoundField DataField="resolution" HeaderText="Resolution" SortExpression="resolution" />
                         <asp:BoundField DataField="price" HeaderText="Price" SortExpression="price" />
                         <asp:BoundField DataField="quantity" HeaderText="Quantity" SortExpression="quantity" />
+                        <asp:ImageField DataImageUrlField="imagePhone" HeaderText="Image" SortExpression="imagePhone">
+                            <ControlStyle Height="100px" Width="100px" />
+                            <ItemStyle Height="100px" Width="100px" />
+                        </asp:ImageField>
                     </Columns>
                     <FooterStyle BackColor="White" ForeColor="#000066" />
                     <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
@@ -42,7 +46,7 @@
                     <SortedDescendingCellStyle BackColor="#CAC9C9" />
                     <SortedDescendingHeaderStyle BackColor="#00547E" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="sdsPhones" runat="server" ConnectionString="<%$ ConnectionStrings:KeggPhonesConnectionString %>" DeleteCommand="DELETE FROM [TPhone] WHERE [idPhone] = @idPhone"  SelectCommand="SELECT [idPhone],[name],[model],[internalMemory],[externalMemory],[pixels],[flash],[resolution],[price],[quantity] FROM [TPhone] INNER JOIN [TBrand] ON [TPhone].[idBrand] = [TBrand].[idBrand]" UpdateCommand="UPDATE [TPhone] SET [idBrand] = @idBrand, [model] = @model, [internalMemory] = @internalMemory, [externalMemory] = @externalMemory, [pixels] = @pixels, [flash] = @flash, [resolution] = @resolution, [price] = @price, [quantity] = @quantity WHERE [idPhone] = @idPhone">
+                <asp:SqlDataSource ID="sdsPhones" runat="server" ConnectionString="<%$ ConnectionStrings:KeggPhonesConnectionString %>" DeleteCommand="DELETE FROM [TPhone] WHERE [idPhone] = @idPhone"  SelectCommand="SELECT [idPhone],[name],[model],[internalMemory],[externalMemory],[pixels],[flash],[resolution],[price],[quantity],[imagePhone] FROM [TPhone] INNER JOIN [TBrand] ON [TPhone].[idBrand] = [TBrand].[idBrand]" UpdateCommand="UPDATE [TPhone] SET [idBrand] = @idBrand, [model] = @model, [internalMemory] = @internalMemory, [externalMemory] = @externalMemory, [pixels] = @pixels, [flash] = @flash, [resolution] = @resolution, [price] = @price, [quantity] = @quantity, [imagePhone] = @imagePhone WHERE [idPhone] = @idPhone">
                     <DeleteParameters>
                         <asp:Parameter Name="idPhone" Type="Int32" />
                     </DeleteParameters>
@@ -68,6 +72,8 @@
                         <asp:Parameter Name="price" Type="Decimal" />
                         <asp:Parameter Name="quantity" Type="Int32" />
                         <asp:Parameter Name="idPhone" Type="Int32" />
+                        <asp:Parameter Name="imagePhone" Type="String" />
+                        
                     </UpdateParameters>
                 </asp:SqlDataSource>
                 <asp:SqlDataSource ID="sdsBrands" runat="server" ConnectionString="<%$ ConnectionStrings:KeggPhonesConnectionString %>" SelectCommand="SELECT (Select name From [TBrand] where idBrand [idBrand]) As name,[model],[internalMemory],[externalMemory],[pixels],[flash],[resolution],[price],[quantity] FROM [TBrand]"></asp:SqlDataSource>

@@ -2059,6 +2059,7 @@ pre code {
 }
 table {
   background-color: transparent;
+    margin-right: 146px;
 }
 th {
   text-align: left;
@@ -2326,7 +2327,7 @@ input[type="checkbox"] {
   line-height: normal;
 }
 input[type="file"] {
-  display: block;
+  /*display: block;*/
 }
 input[type="range"] {
   display: block;
