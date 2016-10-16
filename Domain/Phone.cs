@@ -12,6 +12,8 @@ namespace Domain
         private int idPhone;
         private Brand brand;
         private string model;
+        private string ios;
+        private string networkMode;
         private string internalMemory;
         private string externalMemory;
         private int pixels;
@@ -26,6 +28,8 @@ namespace Domain
             this.IdPhone = -1;
             this.Brand = new Brand();
             this.Model = "";
+            this.IOS = "";
+            this.NetworkMode = "";
             this.InternalMemory = "";
             this.ExternalMemory = "";
             this.Pixels = -1;
@@ -36,13 +40,15 @@ namespace Domain
             this.Image = "";
         }
 
-        public Phone(int idPhone, Brand brand, string model, string internalMemory,
+        public Phone(int idPhone, Brand brand, string model, string ios, string networkmode, string internalMemory,
             string externalMemory, int pixels, int flash, string resolution,
             int price, int quantity,string image)
         {
             this.IdPhone = idPhone;
             this.Brand = brand;
             this.Model = model;
+            this.IOS = ios;
+            this.NetworkMode = networkMode;
             this.InternalMemory = internalMemory;
             this.ExternalMemory = externalMemory;
             this.Pixels = pixels;
@@ -193,6 +199,32 @@ namespace Domain
             set
             {
                 image = value;
+            }
+        }
+
+        public string IOS
+        {
+            get
+            {
+                return ios;
+            }
+
+            set
+            {
+                ios = value;
+            }
+        }
+
+        public string NetworkMode
+        {
+            get
+            {
+                return networkMode;
+            }
+
+            set
+            {
+                networkMode = value;
             }
         }
     }
