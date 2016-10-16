@@ -115,8 +115,34 @@ namespace Data
             sqlAdpaterBank.SelectCommand.Connection.Close();
 
             return dsBrand;
+        }
 
+        public Brand getBrandById(int idBrand)
+        {
+            SqlConnection sqlConn = new SqlConnection(this.connectionString);
 
+            string query = "select * from TBrand where idBrand = " + idBrand;
+
+            SqlDataAdapter sqlAdpaterBank = new SqlDataAdapter();
+            sqlAdpaterBank.SelectCommand = new SqlCommand();
+            sqlAdpaterBank.SelectCommand.CommandText = query;
+            sqlAdpaterBank.SelectCommand.Connection = sqlConn;
+
+            DataSet dsBrand = new DataSet();
+
+            sqlAdpaterBank.Fill(dsBrand, "TBrand");
+
+            sqlAdpaterBank.SelectCommand.Connection.Close();
+
+            DataRowCollection dataRowCollection = dsBrand.Tables["TBrand"].Rows;
+            Brand brand = new Brand(); ;
+            foreach (DataRow currentRow in dataRowCollection)
+            {
+                brand.IdBrand = Int32.Parse(currentRow["idBrand"].ToString());
+                brand.Name = currentRow["name"].ToString();
+            }
+
+            return brand;
         }
 
     }

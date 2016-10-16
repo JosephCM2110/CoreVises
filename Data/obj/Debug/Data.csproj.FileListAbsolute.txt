@@ -19,3 +19,10 @@ C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\Dat
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\Data\obj\Debug\Data.dll
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\Master\CoreVises-master\Data\obj\Debug\Data.pdb
+C:\Users\gollo\Source\Repos\CoreVises\Data\bin\Debug\Data.dll
+C:\Users\gollo\Source\Repos\CoreVises\Data\bin\Debug\Data.pdb
+C:\Users\gollo\Source\Repos\CoreVises\Data\bin\Debug\Domain.dll
+C:\Users\gollo\Source\Repos\CoreVises\Data\bin\Debug\Domain.pdb
+C:\Users\gollo\Source\Repos\CoreVises\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\gollo\Source\Repos\CoreVises\Data\obj\Debug\Data.dll
+C:\Users\gollo\Source\Repos\CoreVises\Data\obj\Debug\Data.pdb
