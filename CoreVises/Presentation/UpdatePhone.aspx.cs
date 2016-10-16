@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Business;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -15,15 +18,29 @@ namespace CoreVises.Presentation
 
         }
 
-        protected void Delete_Image(object sender, GridViewDeleteEventArgs e)
+        protected void Delete(Object sender, GridViewDeleteEventArgs e)
         {
-            File.Delete(sdsPhones.UpdateParameters["i"].DefaultValue);
+            GridViewRow row = gvPhone.Rows[e.RowIndex];
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            int idPhone = Int32.Parse(gvPhone.Rows[row.DataItemIndex].Cells[1].Text);
+            PhoneBusiness phoneB = new PhoneBusiness(conn);
+            fillGrid();
             
         }
 
-        protected void Update_Image(object sender, GridViewUpdateEventArgs e)
+        protected void Update(object sender, GridViewUpdateEventArgs e)
         {
             
+        }
+
+        public void fillGrid()
+        {
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            PhoneBusiness phoneB = new PhoneBusiness(conn);
+            DataSet dataSet;
+            //gvPhone.DataSource = dataSet;
+            gvPhone.DataBind();
+
         }
     }
 }

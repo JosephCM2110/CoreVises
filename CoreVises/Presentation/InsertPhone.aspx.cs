@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -18,15 +19,19 @@ namespace CoreVises.Presentation
             if (!Page.IsPostBack)
             {
                 fillDDL();
-               
+                HttpCookie cookie = Request.Cookies["message"];
+                if (cookie != null)
+                {
+                    lblMessage.Text = Request.Cookies["message"].Value;
+                }
+
             }
             this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
-            System.Console.WriteLine("What is your name: ");
         }
 
         public void fillDDL()
         {
-            string conn = "Data Source=163.178.107.130;Initial Catalog=KeggPhones;User ID=sqlserver;Password=saucr.12";
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
             BrandBusiness brand = new BrandBusiness(conn);
             DataSet dsResult = brand.getAllBrands();
             ddlBrand.DataSource = dsResult;
@@ -43,6 +48,8 @@ namespace CoreVises.Presentation
             brand.Name = ddlBrand.Text;
             phone.Brand = brand ;
             phone.Model = txtModel.Text;
+            phone.OS = ddlOs.SelectedValue;
+            phone.NetworkMode = ddlNet.SelectedValue;
             phone.InternalMemory = txtInternalMemory.Text;
             phone.ExternalMemory = txtExternalMemory.Text;
             phone.Pixels = Int32.Parse(txtPixels.Text);
@@ -60,9 +67,21 @@ namespace CoreVises.Presentation
                 
             }
 
-            string conn = "Data Source=163.178.107.130;Initial Catalog=KeggPhones;User ID=sqlserver;Password=saucr.12";
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
             PhoneBusiness phoneB = new PhoneBusiness(conn);
-            phoneB.insertPhone(phone);
+            int exists = phoneB.insertPhone(phone);
+            if (exists == -1)
+            {
+                Response.Cookies["message"].Value = "Somenthing is wrong, sorry.";
+                Response.Cookies["message"].Expires = DateTime.Now.AddSeconds(5);
+                Response.Redirect("./InsertPhone.aspx");
+            }
+            else
+            {
+                Response.Cookies["message"].Value = "The phone was correctly added.";
+                Response.Cookies["message"].Expires = DateTime.Now.AddSeconds(5);
+                Response.Redirect("./InsertPhone.aspx");
+            }
         }
     }
 }

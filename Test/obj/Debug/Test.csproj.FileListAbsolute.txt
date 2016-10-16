@@ -1,0 +1,8 @@
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Test.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Test.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Encryption.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Encryption.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\Test\obj\Debug\Test.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Test\obj\Debug\Test.pdb

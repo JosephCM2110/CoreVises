@@ -32,8 +32,8 @@ namespace Data
 
             cmdInsert.Parameters.Add(new SqlParameter("@idBrand", phone.Brand.IdBrand));
             cmdInsert.Parameters.Add(new SqlParameter("@model", phone.Model));
-            cmdInsert.Parameters.Add(new SqlParameter("@IOS", phone.IOS));
-            cmdInsert.Parameters.Add(new SqlParameter("@networkMode", phone.NetworkMode));
+            cmdInsert.Parameters.Add(new SqlParameter("@OS", phone.OS));
+            cmdInsert.Parameters.Add(new SqlParameter("@net", phone.NetworkMode));
             cmdInsert.Parameters.Add(new SqlParameter("@internalMemory", phone.InternalMemory));
             cmdInsert.Parameters.Add(new SqlParameter("@externalMemory", phone.ExternalMemory));
             cmdInsert.Parameters.Add(new SqlParameter("@pixels", phone.Pixels));
@@ -69,8 +69,8 @@ namespace Data
 
             cmdInsert.Parameters.Add(new SqlParameter("@idBrand", phone.Brand.IdBrand));
             cmdInsert.Parameters.Add(new SqlParameter("@model", phone.Model));
-            cmdInsert.Parameters.Add(new SqlParameter("@IOS", phone.IOS));
-            cmdInsert.Parameters.Add(new SqlParameter("@networkMode", phone.NetworkMode));
+            cmdInsert.Parameters.Add(new SqlParameter("@OS", phone.OS));
+            cmdInsert.Parameters.Add(new SqlParameter("@net", phone.NetworkMode));
             cmdInsert.Parameters.Add(new SqlParameter("@internalMemory", phone.InternalMemory));
             cmdInsert.Parameters.Add(new SqlParameter("@externalMemory", phone.ExternalMemory));
             cmdInsert.Parameters.Add(new SqlParameter("@pixels", phone.Pixels));

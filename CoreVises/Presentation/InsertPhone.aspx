@@ -29,7 +29,30 @@
                                 </asp:RequiredFieldValidator>
                                 <br />
                             </td>
-
+                        </tr>
+                        <tr>
+                             <td>
+                                <asp:Label runat="server" Text="OS:"></asp:Label>
+                                <br />
+                                 <asp:DropDownList ID="ddlOs" runat="server">
+                                    <asp:ListItem Value="IOS">IOS</asp:ListItem>
+                                    <asp:ListItem Value="Android">Android</asp:ListItem>
+                                    <asp:ListItem Value="Windows">Windows</asp:ListItem>
+                                 </asp:DropDownList>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                             <td>
+                                <asp:Label runat="server" Text="Netwok Mode:"></asp:Label>
+                                <br />
+                                 <asp:DropDownList ID="ddlNet" runat="server">
+                                     <asp:ListItem Value="3G">3G</asp:ListItem>
+                                    <asp:ListItem Value="4G">4G</asp:ListItem>
+                                 </asp:DropDownList>
+                                 
+                                <br />
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -132,7 +155,7 @@
                         <tr>
                             <td>
                                 <br />
-                                <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label><br />
+                                <asp:Label ForeColor="Red"  ID="lblMessage" runat="server" Text=""></asp:Label><br />
                             </td>
                         </tr>
                     </table>

@@ -94,7 +94,7 @@
                         <tr>
                             <td>
                                 <br />
-                                <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label><br />
+                                <asp:Label ForeColor="Red"  ID="lblMessage" runat="server" Text=""></asp:Label><br />
                             </td>
                         </tr>
                     </table>

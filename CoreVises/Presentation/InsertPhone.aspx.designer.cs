@@ -49,6 +49,24 @@ namespace CoreVises.Presentation {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator emptyModel;
         
         /// <summary>
+        /// ddlOs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlOs;
+        
+        /// <summary>
+        /// ddlNet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlNet;
+        
+        /// <summary>
         /// txtInternalMemory control.
         /// </summary>
         /// <remarks>
