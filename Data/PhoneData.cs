@@ -148,6 +148,36 @@ namespace Data
             return answer;
         }
 
+        public DataSet getPhones()
+        {
+            //conexion con la bd
+            SqlConnection sqlConn = new SqlConnection(this.connectionString);
+
+            //string sql
+            string sqlSelect = "Select * from TPhone;";
+
+            //establecer la conexion con el adaptador
+            SqlDataAdapter sqlDataAdapterProperty = new SqlDataAdapter();
+
+            //configurar el adaptador
+            sqlDataAdapterProperty.SelectCommand = new SqlCommand();
+            sqlDataAdapterProperty.SelectCommand.CommandText = sqlSelect;
+            sqlDataAdapterProperty.SelectCommand.Connection = sqlConn;
+
+            //definir el data set
+            DataSet datasetProperties = new DataSet();
+
+            //dataset para guardar los resultados de la consulta
+            sqlDataAdapterProperty.Fill(datasetProperties, "TPhone");
+
+            //cerrar la conexion con el adaptador
+            sqlDataAdapterProperty.SelectCommand.Connection.Close();
+
+            return datasetProperties;
+        }
+
+
+
 
     }
 }

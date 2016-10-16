@@ -18,14 +18,22 @@ namespace CoreVises.Presentation
 
         }
 
-        protected void Delete(Object sender, GridViewDeleteEventArgs e)
+        protected void delete(Object sender, GridViewDeleteEventArgs e)
         {
             GridViewRow row = gvPhone.Rows[e.RowIndex];
-            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
-            int idPhone = Int32.Parse(gvPhone.Rows[row.DataItemIndex].Cells[1].Text);
-            PhoneBusiness phoneB = new PhoneBusiness(conn);
-            fillGrid();
-            
+
+            Image image = (Image)row.FindControl("imagePhone");
+            string path = @"C:\Users\Brayan\Source\Repos\CoreVises\CoreVises";
+            string imagePath = image.ImageUrl;
+            Label4.Text = imagePath;
+            int p = imagePath.Length;
+            imagePath = imagePath.Substring(2, p);
+            string filePath = path + imagePath;
+            Label4.Text = filePath;
+            //File.Delete(image.ImageUrl);
+
+
+
         }
 
         protected void Update(object sender, GridViewUpdateEventArgs e)
@@ -33,14 +41,6 @@ namespace CoreVises.Presentation
             
         }
 
-        public void fillGrid()
-        {
-            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
-            PhoneBusiness phoneB = new PhoneBusiness(conn);
-            DataSet dataSet;
-            //gvPhone.DataSource = dataSet;
-            gvPhone.DataBind();
 
-        }
     }
 }

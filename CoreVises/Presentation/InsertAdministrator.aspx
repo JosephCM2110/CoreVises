@@ -12,6 +12,12 @@
                     <table style="width: 100%;">
                         <tr>
                             <td>
+                                <br />
+                                <asp:Label ForeColor="Red"  ID="lblMessage" runat="server" Text=""></asp:Label><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <asp:Label runat="server" Text="Name:"></asp:Label>
                                 <br />
                                 <asp:TextBox ID="txtName" runat="server" Height="27px" Width="485px"></asp:TextBox><br />
@@ -91,12 +97,7 @@
                                 <asp:Button ID="btnAccept" runat="server" Text="Accept" OnClick="btnAccept_Click" Height="49px" Width="485px" />
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <br />
-                                <asp:Label ForeColor="Red"  ID="lblMessage" runat="server" Text=""></asp:Label><br />
-                            </td>
-                        </tr>
+
                     </table>
 
                 </form>

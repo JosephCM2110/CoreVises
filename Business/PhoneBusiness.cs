@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Data;
 using Domain;
+using System.Data;
 
 namespace Business
 {
@@ -37,6 +38,11 @@ namespace Business
         public int verifyExistsPhone(string idBrand, string model)
         {
             return PhoneData.verifyExistsPhone(idBrand, model);
+        }
+
+        public DataSet getPhones()
+        {
+            return phoneData.getPhones();
         }
 
         public string ConnectionString

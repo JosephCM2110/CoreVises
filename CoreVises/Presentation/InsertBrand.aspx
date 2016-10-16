@@ -10,6 +10,12 @@
             <div class="row text-center pad-top">
                 <form id="create_Brand" runat="server">
                      <table style="width: 100%;">
+                       <tr>
+                            <td>
+                                <br />
+                                <asp:Label ForeColor="Red"  ID="lblMessage" runat="server" Text=""></asp:Label><br />
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <asp:Label runat="server" Text="Name:"></asp:Label>
@@ -30,12 +36,7 @@
                                 <asp:Button ID="btnAccept" runat="server" Text="Accept" OnClick="btnAccept_Click" Height="49px" Width="485px" />
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <br />
-                                <asp:Label ForeColor="Red"  ID="lblMessage" runat="server" Text=""></asp:Label><br />
-                            </td>
-                        </tr>
+
                     </table>
 
                 </form>
