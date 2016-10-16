@@ -114,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BrandService.svc" />
+    <Content Include="ClientService.svc" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Service1.svc" />
@@ -124,7 +125,11 @@
     <Compile Include="BrandService.svc.cs">
       <DependentUpon>BrandService.svc</DependentUpon>
     </Compile>
+    <Compile Include="ClientService.svc.cs">
+      <DependentUpon>ClientService.svc</DependentUpon>
+    </Compile>
     <Compile Include="IBrandService.cs" />
+    <Compile Include="IClientService.cs" />
     <Compile Include="IService2.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>

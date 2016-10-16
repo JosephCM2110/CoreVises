@@ -8,7 +8,7 @@ using Domain;
 
 namespace Business
 {
-    class ClientBusiness
+    public class ClientBusiness
     {
         private string connectionString;
         private ClientData clientData;
@@ -21,22 +21,22 @@ namespace Business
 
         public int insertClient(Client client)
         {
-            return ClientData.insertClient(client);
+            return this.ClientData.insertClient(client);
         }
 
         public int updateClient(Client client)
         {
-            return ClientData.updateClient(client);
+            return this.ClientData.updateClient(client);
         }
 
         public int deleteClient(int idClient)
         {
-            return clientData.deleteClient(idClient);
+            return this.ClientData.deleteClient(idClient);
         }
 
         public int verifyExistsClient(string nameUser, string passwordUser)
         {
-            return clientData.verifyExistsClient(nameUser, passwordUser);
+            return this.ClientData.verifyExistsClient(nameUser, passwordUser);
         }
 
         public string ConnectionString
