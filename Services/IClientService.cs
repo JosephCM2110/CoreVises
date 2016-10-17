@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -24,5 +25,8 @@ namespace Services
 
         [OperationContract]
         int verifyExistsClient(string nameUser, string passwordUser);
+
+        [OperationContract]
+        Client getClient(string nameUser);
     }
 }

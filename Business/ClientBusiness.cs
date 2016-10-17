@@ -44,6 +44,11 @@ namespace Business
             return this.clientData.getClientById(idClient);
         }
 
+        public Client getClientByUserName(string userName)
+        {
+            return this.clientData.getClientByUserName(userName);
+        }
+
         public string ConnectionString
         {
             get

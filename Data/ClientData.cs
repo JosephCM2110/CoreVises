@@ -179,5 +179,42 @@ namespace Data
             return client;
         }
 
+        public Client getClientByUserName(string userName)
+        {
+            SqlConnection sqlConn = new SqlConnection(this.connectionString);
+
+            string query = "select * from TClient where nameUser = " + userName;
+
+            SqlDataAdapter sqlAdpaterBank = new SqlDataAdapter();
+            sqlAdpaterBank.SelectCommand = new SqlCommand();
+            sqlAdpaterBank.SelectCommand.CommandText = query;
+            sqlAdpaterBank.SelectCommand.Connection = sqlConn;
+
+            DataSet dsClient = new DataSet();
+
+            sqlAdpaterBank.Fill(dsClient, "TClient");
+
+            sqlAdpaterBank.SelectCommand.Connection.Close();
+
+            DataRowCollection dataRowCollection = dsClient.Tables["TClient"].Rows;
+            Client client = new Client();
+            foreach (DataRow currentRow in dataRowCollection)
+            {
+                client.IdUser = Int32.Parse(currentRow["idClient"].ToString());
+                client.Name = currentRow["name"].ToString();
+                client.LastName_1 = currentRow["lastName_1"].ToString();
+                client.LastName_2 = currentRow["lastName_2"].ToString();
+                client.NameUser = currentRow["nameUser"].ToString();
+                client.PasswordUser = currentRow["passwordUser"].ToString();
+                client.Email = currentRow["email"].ToString();
+                client.NumberCard = currentRow["numberCard"].ToString();
+                client.AddressDirection = currentRow["addressDirection"].ToString();
+                client.PostalCode = currentRow["postalCode"].ToString();
+                client.SvcCard = currentRow["svcCard"].ToString();
+            }
+
+            return client;
+        }
+
     }
 }

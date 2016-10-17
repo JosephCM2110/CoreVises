@@ -49,5 +49,12 @@ namespace Services
             int response =  cb.verifyExistsClient(nameUser, passwordUser);
             return response;
         }
+
+        Client getClient(string nameUser)
+        {
+            ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            EncryptionMethods em = new EncryptionMethods();
+            return cb.getClientByUserName(nameUser);
+        }
     }
 }
