@@ -112,6 +112,7 @@
     <Content Include="BrandService.svc" />
     <Content Include="ClientService.svc" />
     <Content Include="PhoneService.svc" />
+    <Content Include="SaleService.svc" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Service1.svc" />
@@ -128,9 +129,13 @@
     <Compile Include="IBrandService.cs" />
     <Compile Include="IClientService.cs" />
     <Compile Include="IPhoneService.cs" />
+    <Compile Include="ISaleService.cs" />
     <Compile Include="IService2.cs" />
     <Compile Include="PhoneService.svc.cs">
       <DependentUpon>PhoneService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="SaleService.svc.cs">
+      <DependentUpon>SaleService.svc</DependentUpon>
     </Compile>
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>

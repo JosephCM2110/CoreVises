@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\SaleServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -92,9 +97,17 @@
     <None Include="Service References\PhoneServiceReference\PhoneService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\SaleServiceReference\SaleService.wsdl" />
+    <None Include="Service References\SaleServiceReference\SaleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SaleServiceReference\SaleService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\PhoneServiceReference\" />
+    <WCFMetadataStorage Include="Service References\SaleServiceReference\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\PhoneServiceReference\PhoneService.disco" />
@@ -107,6 +120,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\PhoneServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SaleServiceReference\SaleService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SaleServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SaleServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SaleServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

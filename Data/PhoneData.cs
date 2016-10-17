@@ -176,7 +176,57 @@ namespace Data
             return datasetPhones;
         }
 
+        public Phone getPhoneById(int idPhone)
+        {
+            //conexion con la bd
+            SqlConnection sqlConn = new SqlConnection(this.connectionString);
 
+            //string sql
+            string sqlSelect = "Select * from TPhone where idPhone=" + idPhone;
+
+            //establecer la conexion con el adaptador
+            SqlDataAdapter sqlDataAdapterProperty = new SqlDataAdapter();
+
+            //configurar el adaptador
+            sqlDataAdapterProperty.SelectCommand = new SqlCommand();
+            sqlDataAdapterProperty.SelectCommand.CommandText = sqlSelect;
+            sqlDataAdapterProperty.SelectCommand.Connection = sqlConn;
+
+            //definir el data set
+            DataSet datasetPhones = new DataSet();
+
+            //dataset para guardar los resultados de la consulta
+            sqlDataAdapterProperty.Fill(datasetPhones, "TPhone");
+
+            //cerrar la conexion con el adaptador
+            sqlDataAdapterProperty.SelectCommand.Connection.Close();
+
+            DataRowCollection dataRowCollection = datasetPhones.Tables["TPhone"].Rows;
+            Phone phone = null;
+            int flash;
+            foreach (DataRow currentRow in dataRowCollection)
+            {
+                BrandData bd = new BrandData("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+                Brand brandTemp = bd.getBrandById(Int32.Parse(currentRow["idBrand"].ToString()));
+                if (currentRow["flash"].ToString() == "True")
+                    flash = 1;
+                else
+                    flash = 0;
+                string model = currentRow["model"].ToString();
+                string os = currentRow["OS"].ToString();
+                string nm = currentRow["networkMode"].ToString();
+                string im = currentRow["internalMemory"].ToString();
+                string exm = currentRow["externalMemory"].ToString();
+                int pixels = Int32.Parse(currentRow["pixels"].ToString());
+                string resol = currentRow["resolution"].ToString();
+                int price = (int)Double.Parse(currentRow["price"].ToString());
+                int quantity = Int32.Parse(currentRow["quantity"].ToString());
+                string imgP = currentRow["imagePhone"].ToString();
+                phone = new Phone(idPhone, brandTemp, model, os, nm, im, exm, pixels, flash, resol, price, quantity, imgP);
+            }
+
+            return phone;
+        }
 
 
     }

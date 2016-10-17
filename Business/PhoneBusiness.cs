@@ -45,6 +45,11 @@ namespace Business
             return phoneData.getPhones();
         }
 
+        public Phone getPhoneById(int idPhone)
+        {
+            return this.phoneData.getPhoneById(idPhone);
+        }
+
         public string ConnectionString
         {
             get

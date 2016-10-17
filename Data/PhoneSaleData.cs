@@ -22,7 +22,7 @@ namespace Data
         {
             SqlConnection connection = new SqlConnection(this.connectionString);
 
-            string sqlStoredProcedure = "PAInsert_Phones";
+            string sqlStoredProcedure = "PAInsert_SaleXPhones";
             SqlCommand cmdInsert = new SqlCommand(sqlStoredProcedure, connection);
 
             cmdInsert.CommandType = CommandType.StoredProcedure;

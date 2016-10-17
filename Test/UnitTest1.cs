@@ -14,6 +14,18 @@ namespace Test
         [TestMethod]
         public void TestMethod1()
         {
+
+            SaleServiceReference.SaleServiceClient c = new SaleServiceReference.SaleServiceClient();
+
+            c.registerSale(11, "18.1,19.2", 10000);
+
+
+
+            //PhoneData cd = new PhoneData("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            //Phone c = cd.getPhoneById(18);
+            //Console.WriteLine(c.Model);
+            //Console.ReadLine();
+
             //string texto = "23452.we,l,tr,r";
             //Console.WriteLine(texto);
             //Console.WriteLine("------------------------------------------------------------------");
@@ -26,13 +38,13 @@ namespace Test
             //Console.WriteLine(textodes);
 
 
-            PhoneServiceReference.PhoneServiceClient c = new PhoneServiceReference.PhoneServiceClient();
+            //PhoneServiceReference.PhoneServiceClient c = new PhoneServiceReference.PhoneServiceClient();
 
-            int r = c.getPhones().Count();
+            //int r = c.getPhones().Count();
 
-            Console.WriteLine(r);
+            //Console.WriteLine(r);
 
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }

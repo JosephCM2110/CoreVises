@@ -39,6 +39,11 @@ namespace Business
             return this.ClientData.verifyExistsClient(nameUser, passwordUser);
         }
 
+        public Client getClientById(int idClient)
+        {
+            return this.clientData.getClientById(idClient);
+        }
+
         public string ConnectionString
         {
             get
