@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreVises", "CoreVises\CoreVises.csproj", "{4F7B8BFB-8ED4-46C0-A308-5D5DB9ED655D}"
 EndProject
@@ -16,6 +16,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption", "Encryption\Encryption.csproj", "{CCAC557E-8602-411F-B5FA-4A17CADA56DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{03A79620-F5A7-47C8-9043-42A871B8CAA0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32CA11B9-AFCE-4992-880E-91F8CC002015} = {32CA11B9-AFCE-4992-880E-91F8CC002015}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

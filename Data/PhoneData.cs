@@ -32,7 +32,7 @@ namespace Data
 
             cmdInsert.Parameters.Add(new SqlParameter("@idBrand", phone.Brand.IdBrand));
             cmdInsert.Parameters.Add(new SqlParameter("@model", phone.Model));
-            cmdInsert.Parameters.Add(new SqlParameter("@OS", phone.OS));
+            cmdInsert.Parameters.Add(new SqlParameter("@os", phone.OS));
             cmdInsert.Parameters.Add(new SqlParameter("@net", phone.NetworkMode));
             cmdInsert.Parameters.Add(new SqlParameter("@internalMemory", phone.InternalMemory));
             cmdInsert.Parameters.Add(new SqlParameter("@externalMemory", phone.ExternalMemory));
@@ -61,7 +61,7 @@ namespace Data
         {
             SqlConnection connection = new SqlConnection(this.connectionString);
 
-            string sqlStoredProcedure = "PAUpdate_Phoness";
+            string sqlStoredProcedure = "PAUpdate_Phones";
             SqlCommand cmdInsert = new SqlCommand(sqlStoredProcedure, connection);
 
             cmdInsert.CommandType = CommandType.StoredProcedure;
@@ -69,7 +69,7 @@ namespace Data
 
             cmdInsert.Parameters.Add(new SqlParameter("@idBrand", phone.Brand.IdBrand));
             cmdInsert.Parameters.Add(new SqlParameter("@model", phone.Model));
-            cmdInsert.Parameters.Add(new SqlParameter("@OS", phone.OS));
+            cmdInsert.Parameters.Add(new SqlParameter("@os", phone.OS));
             cmdInsert.Parameters.Add(new SqlParameter("@net", phone.NetworkMode));
             cmdInsert.Parameters.Add(new SqlParameter("@internalMemory", phone.InternalMemory));
             cmdInsert.Parameters.Add(new SqlParameter("@externalMemory", phone.ExternalMemory));
@@ -78,7 +78,7 @@ namespace Data
             cmdInsert.Parameters.Add(new SqlParameter("@resolution", phone.Resolution));
             cmdInsert.Parameters.Add(new SqlParameter("@price", phone.Price));
             cmdInsert.Parameters.Add(new SqlParameter("@quantity", phone.Quantity));
-            cmdInsert.Parameters.Add(new SqlParameter("@idPhone", phone.Quantity));
+            cmdInsert.Parameters.Add(new SqlParameter("@idPhone", phone.IdPhone));
             cmdInsert.Parameters.Add(new SqlParameter("@imagePhone", phone.Image));
             SqlParameter parameterCode = new SqlParameter("@state", SqlDbType.Int);
             parameterCode.Direction = ParameterDirection.Output;
@@ -165,15 +165,15 @@ namespace Data
             sqlDataAdapterProperty.SelectCommand.Connection = sqlConn;
 
             //definir el data set
-            DataSet datasetProperties = new DataSet();
+            DataSet datasetPhones = new DataSet();
 
             //dataset para guardar los resultados de la consulta
-            sqlDataAdapterProperty.Fill(datasetProperties, "TPhone");
+            sqlDataAdapterProperty.Fill(datasetPhones, "TPhone");
 
             //cerrar la conexion con el adaptador
             sqlDataAdapterProperty.SelectCommand.Connection.Close();
 
-            return datasetProperties;
+            return datasetPhones;
         }
 
 

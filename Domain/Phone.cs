@@ -42,13 +42,13 @@ namespace Domain
 
         public Phone(int idPhone, Brand brand, string model, string os, string networkmode, string internalMemory,
             string externalMemory, int pixels, int flash, string resolution,
-            int price, int quantity,string image)
+            int price, int quantity, string image)
         {
             this.IdPhone = idPhone;
             this.Brand = brand;
             this.Model = model;
-            this.OS = os;
-            this.NetworkMode = networkMode;
+            this.os = os;
+            this.NetworkMode = networkmode;
             this.InternalMemory = internalMemory;
             this.ExternalMemory = externalMemory;
             this.Pixels = pixels;

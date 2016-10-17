@@ -41,10 +41,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Domain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Documents\Visual Studio 2015\Projects\CoreVises\Business\bin\Debug\Domain.dll</HintPath>
-    </Reference>
     <Reference Include="Encryption">
       <HintPath>..\Encryption\obj\Debug\Encryption.dll</HintPath>
     </Reference>
@@ -115,6 +111,7 @@
   <ItemGroup>
     <Content Include="BrandService.svc" />
     <Content Include="ClientService.svc" />
+    <Content Include="PhoneService.svc" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Service1.svc" />
@@ -130,7 +127,11 @@
     </Compile>
     <Compile Include="IBrandService.cs" />
     <Compile Include="IClientService.cs" />
+    <Compile Include="IPhoneService.cs" />
     <Compile Include="IService2.cs" />
+    <Compile Include="PhoneService.svc.cs">
+      <DependentUpon>PhoneService.svc</DependentUpon>
+    </Compile>
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -154,6 +155,10 @@
     <ProjectReference Include="..\Business\Business.csproj">
       <Project>{836c20b8-7c80-4c46-a0eb-11273fb17ee9}</Project>
       <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{f995e670-e92a-42a2-ba45-08cfe39cc6f6}</Project>
+      <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

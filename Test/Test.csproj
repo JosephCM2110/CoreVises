@@ -36,6 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,14 +54,62 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Service References\PhoneServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{e3b6bb42-6446-42d0-9717-6f29a9cb6800}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{f995e670-e92a-42a2-ba45-08cfe39cc6f6}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Encryption\Encryption.csproj">
       <Project>{ccac557e-8602-411f-b5fa-4a17cada56dd}</Project>
       <Name>Encryption</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Domain.Phone.datasource" />
+    <None Include="Service References\PhoneServiceReference\PhoneService.wsdl" />
+    <None Include="Service References\PhoneServiceReference\PhoneService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhoneServiceReference\PhoneService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhoneServiceReference\PhoneService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\PhoneServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhoneServiceReference\PhoneService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhoneServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhoneServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PhoneServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8ae8a97a-6c0a-4c9b-b4fc-35e508a631b9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:58189/PhoneService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PhoneService.wsdl" MetadataType="Wsdl" ID="fbbb5326-7a9f-4517-a43a-cdb2949be601" SourceId="1" SourceUrl="http://localhost:58189/PhoneService.svc?wsdl" />
+    <MetadataFile FileName="PhoneService.xsd" MetadataType="Schema" ID="6c68a393-9855-43c4-b91d-b791347aefe5" SourceId="1" SourceUrl="http://localhost:58189/PhoneService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PhoneService1.xsd" MetadataType="Schema" ID="5274e2b3-a383-4ec8-8e42-9711c6ac4fe5" SourceId="1" SourceUrl="http://localhost:58189/PhoneService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PhoneService2.xsd" MetadataType="Schema" ID="ac5515fb-6f9d-4a97-a423-6091a4e73114" SourceId="1" SourceUrl="http://localhost:58189/PhoneService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PhoneService.disco" MetadataType="Disco" ID="0ca92b83-f42a-47a4-9a7c-87ff683d7cee" SourceId="1" SourceUrl="http://localhost:58189/PhoneService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
