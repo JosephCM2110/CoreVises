@@ -50,7 +50,7 @@ namespace Services
             return response;
         }
 
-        Client getClient(string nameUser)
+        public Client getClient(string nameUser)
         {
             ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
             EncryptionMethods em = new EncryptionMethods();
