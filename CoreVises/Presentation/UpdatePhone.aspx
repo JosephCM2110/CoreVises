@@ -77,13 +77,13 @@
                         </asp:BoundField>
                           <asp:TemplateField HeaderText="Image">
                             <EditItemTemplate>
-                                <asp:FileUpload ID="fileImage"  runat="server" EnableViewState="true" />
-                                <asp:Image ID="ImagePhoneO" runat="server" ImageUrl ='<%# Bind("imagePhone") %>' />
+                                <asp:FileUpload ID="fileImage"  runat="server" EnableViewState="true" Width="100" Height="30" />
+                                <asp:Image ID="ImagePhoneO" runat="server" ImageUrl ='<%# Bind("imagePhone") %>' Visible="false" />
                             </EditItemTemplate>
                             <ItemTemplate>
-                                <asp:Image ID="ImagePhone" runat="server" ImageUrl ='<%# Bind("imagePhone") %>' />
+                                <asp:Image ID="ImagePhone" runat="server" ImageUrl ='<%# Bind("imagePhone") %>' Width="100" Height="100" />
                             </ItemTemplate>
-                             <ControlStyle Height="100px" Width="100px" />
+                             
                         </asp:TemplateField>
                     </Columns>
                     <FooterStyle BackColor="White" ForeColor="#000066" />
@@ -136,7 +136,7 @@
                 </asp:SqlDataSource>
                 <asp:SqlDataSource ID="sdsBrands" runat="server" ConnectionString="<%$ ConnectionStrings:KeggPhonesConnectionString %>"
                      SelectCommand="SELECT [idBrand], [name] FROM [TBrand]"></asp:SqlDataSource>
-            </form>                    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+            </form>
              </div>
         </div>
 

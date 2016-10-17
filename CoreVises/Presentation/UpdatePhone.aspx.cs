@@ -47,11 +47,8 @@ namespace CoreVises.Presentation
                 string newimagePath = imagePath.Remove(0, 2);
                 string filePath = path + imagePath;
                 File.Delete(filePath);
-                image.ImageUrl = "../Images/Phones/" + fl1.FileName.Trim();
-                Image ima = (Image)row.FindControl("imagePhone");
-                ima.ImageUrl = "../Images/Phones/" + fl1.FileName.Trim();
-                Label4.Text = image.ImageUrl;
-                fl1.SaveAs(Server.MapPath("~/Images/Phones/") + fl1.FileName.Trim());
+                e.NewValues["imagePhone"] = "../Images/Phones/" + fl1.FileName;
+                fl1.SaveAs(Server.MapPath("~/Images/Phones/") + fl1.FileName);
             }
 
         }

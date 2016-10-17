@@ -14,7 +14,7 @@ namespace Encryption
 
         public EncryptionMethods()
         {
-            this.alphabet = "abcdefghijklmnopqrstuvwxyz1234567890,./-_%!";
+            this.alphabet = "abcdefghijklmnopqrstuvwxyz1234567890,./-_%![]{} ";
             this.alphabetChar = alphabet.ToCharArray();
         }
 
