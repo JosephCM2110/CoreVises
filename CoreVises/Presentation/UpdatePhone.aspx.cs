@@ -25,20 +25,35 @@ namespace CoreVises.Presentation
             Image image = (Image)row.FindControl("imagePhone");
             string path = @"C:\Users\Brayan\Source\Repos\CoreVises\CoreVises";
             string imagePath = image.ImageUrl;
-            Label4.Text = imagePath;
-            int p = imagePath.Length;
-            imagePath = imagePath.Substring(2, p);
+            string newimagePath = imagePath.Remove(0, 2);
             string filePath = path + imagePath;
-            Label4.Text = filePath;
-            //File.Delete(image.ImageUrl);
+            File.Delete(filePath);
 
 
 
         }
 
-        protected void Update(object sender, GridViewUpdateEventArgs e)
+        protected void update(object sender, GridViewUpdateEventArgs e)
         {
-            
+
+
+            GridViewRow row = gvPhone.Rows[e.RowIndex];
+            FileUpload fl1 = (FileUpload)row.FindControl("fileImage");
+            if (fl1.FileName != "")
+            {
+                Image image = (Image)row.FindControl("imagePhoneO");
+                string path = @"C:\Users\Brayan\Source\Repos\CoreVises\CoreVises";
+                string imagePath = image.ImageUrl;
+                string newimagePath = imagePath.Remove(0, 2);
+                string filePath = path + imagePath;
+                File.Delete(filePath);
+                image.ImageUrl = "../Images/Phones/" + fl1.FileName.Trim();
+                Image ima = (Image)row.FindControl("imagePhone");
+                ima.ImageUrl = "../Images/Phones/" + fl1.FileName.Trim();
+                Label4.Text = image.ImageUrl;
+                fl1.SaveAs(Server.MapPath("~/Images/Phones/") + fl1.FileName.Trim());
+            }
+
         }
 
 
