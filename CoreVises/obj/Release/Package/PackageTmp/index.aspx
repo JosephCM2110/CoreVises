@@ -6,7 +6,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Responsive Admin</title>
+    <title>CoreVises</title>
     <!-- BOOTSTRAP STYLES-->
     <link href="./Style/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
@@ -56,6 +56,9 @@
                                 <asp:Label runat="server" Text="User Name:"></asp:Label>
                                 <br />
                                 <asp:TextBox ID="txtUser" runat="server" Height="27px" Width="485px"></asp:TextBox><br />
+                                <asp:RequiredFieldValidator ID="emptyUser" runat="server" 
+                                    ControlToValidate="txtUser" Display="Dynamic" Text="*empty field" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
                                 <br />
                             </td>
 
@@ -65,6 +68,9 @@
                                 <asp:Label runat="server" Text="Password:"></asp:Label>
                                 <br />
                                 <asp:TextBox ID="txtPassword" runat="server" Height="27px" Width="485px"></asp:TextBox><br />
+                                <asp:RequiredFieldValidator ID="emptyPassword" runat="server" 
+                                    ControlToValidate="txtPassword" Display="Dynamic" Text="*empty field" ForeColor="Red">
+                                </asp:RequiredFieldValidator>
                                 <br />
                             </td>
                         </tr>
@@ -104,7 +110,7 @@
     
             <div class="row">
                 <div class="col-lg-12" >
-                    &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
+                   
                 </div>
             </div>
         </div>

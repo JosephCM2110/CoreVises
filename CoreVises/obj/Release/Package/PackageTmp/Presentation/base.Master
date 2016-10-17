@@ -5,7 +5,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Responsive Admin</title>
+    <title>CoreVises</title>
     <!-- BOOTSTRAP STYLES-->
     <link href="../Style/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
@@ -73,7 +73,7 @@
     
             <div class="row">
                 <div class="col-lg-12" >
-                    &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
+                    
                 </div>
             </div>
         </div>
