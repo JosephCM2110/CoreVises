@@ -96,3 +96,5 @@ C:\Users\gollo\Source\Repos\CoreVises\Services\obj\Debug\Services.dll
 C:\Users\gollo\Source\Repos\CoreVises\Services\obj\Debug\Services.pdb
 C:\Users\gollo\Source\Repos\CoreVises\Services\bin\Encryption.dll
 C:\Users\gollo\Source\Repos\CoreVises\Services\bin\Encryption.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Encryption.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Encryption.pdb

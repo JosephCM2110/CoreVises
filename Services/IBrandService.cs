@@ -9,6 +9,7 @@ using System.Text;
 
 namespace Services
 {
+    
     [ServiceContract]
     public interface IBrandService
     {

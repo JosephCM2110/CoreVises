@@ -19,3 +19,10 @@ C:\Users\gollo\Source\Repos\CoreVises\Test\bin\Debug\Domain.dll
 C:\Users\gollo\Source\Repos\CoreVises\Test\bin\Debug\Data.pdb
 C:\Users\gollo\Source\Repos\CoreVises\Test\bin\Debug\Domain.pdb
 C:\Users\gollo\Source\Repos\CoreVises\Test\bin\Debug\Test.dll.config
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Test.dll.config
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Business.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Data.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Business.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Data.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Test\bin\Debug\Domain.pdb

@@ -68,6 +68,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{836c20b8-7c80-4c46-a0eb-11273fb17ee9}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{e3b6bb42-6446-42d0-9717-6f29a9cb6800}</Project>
       <Name>Data</Name>

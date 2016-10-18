@@ -5,6 +5,7 @@ using Domain;
 using Data;
 using System.Data;
 using System.Linq;
+using Business;
 
 namespace Test
 {
@@ -15,9 +16,18 @@ namespace Test
         public void TestMethod1()
         {
 
-            SaleServiceReference.SaleServiceClient c = new SaleServiceReference.SaleServiceClient();
 
-            c.registerSale(11, "18.1,19.2", 10000);
+            ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+           
+
+            Client c = cb.getClientByUserName("yarr");
+            c.Name = "Brayan";
+            cb.updateClient(c);
+            Console.Write(c.LastName_1);
+
+            //SaleServiceReference.SaleServiceClient c = new SaleServiceReference.SaleServiceClient();
+
+            //c.registerSale(11, "18.1,19.2", 10000);
 
 
 

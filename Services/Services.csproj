@@ -145,7 +145,6 @@
     <Compile Include="Service2.svc.cs">
       <DependentUpon>Service2.svc</DependentUpon>
     </Compile>
-    <Compile Include="ValuesController1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

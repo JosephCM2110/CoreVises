@@ -183,7 +183,7 @@ namespace Data
         {
             SqlConnection sqlConn = new SqlConnection(this.connectionString);
 
-            string query = "select * from TClient where nameUser = " + userName;
+            string query = "select * from TClient where nameUser = '" + userName+"'";
 
             SqlDataAdapter sqlAdpaterBank = new SqlDataAdapter();
             sqlAdpaterBank.SelectCommand = new SqlCommand();

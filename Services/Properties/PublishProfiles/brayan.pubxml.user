@@ -13,16 +13,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2016 09:51:38</publishTime>
     </File>
     <File Include="bin/Business.dll">
-      <publishTime>10/17/2016 15:19:32</publishTime>
+      <publishTime>10/17/2016 18:42:36</publishTime>
     </File>
     <File Include="bin/Data.dll">
-      <publishTime>10/17/2016 15:19:32</publishTime>
+      <publishTime>10/17/2016 18:42:36</publishTime>
     </File>
     <File Include="bin/Domain.dll">
       <publishTime>10/17/2016 11:05:11</publishTime>
     </File>
     <File Include="bin/Encryption.dll">
-      <publishTime>10/17/2016 09:51:35</publishTime>
+      <publishTime>10/17/2016 18:32:53</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>10/17/2016 09:51:35</publishTime>
@@ -49,7 +49,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2016 09:51:38</publishTime>
     </File>
     <File Include="bin/Services.dll">
-      <publishTime>10/17/2016 15:23:28</publishTime>
+      <publishTime>10/17/2016 18:42:37</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>10/17/2016 09:51:37</publishTime>

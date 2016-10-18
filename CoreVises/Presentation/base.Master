@@ -43,7 +43,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 
-                    <li class="active-link">
+                    <li>
                         <a href="AdminMenu.aspx" ><i class="fa fa-edit  "></i>Administrators</a>
                     </li>
 
