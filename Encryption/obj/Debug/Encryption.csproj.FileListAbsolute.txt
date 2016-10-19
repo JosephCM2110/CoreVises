@@ -6,3 +6,4 @@ C:\Users\gollo\Source\Repos\CoreVises\Encryption\bin\Debug\Encryption.dll
 C:\Users\gollo\Source\Repos\CoreVises\Encryption\bin\Debug\Encryption.pdb
 C:\Users\gollo\Source\Repos\CoreVises\Encryption\obj\Debug\Encryption.dll
 C:\Users\gollo\Source\Repos\CoreVises\Encryption\obj\Debug\Encryption.pdb
+C:\Users\gollo\Source\Repos\CoreVises\Encryption\obj\Debug\Encryption.csprojResolveAssemblyReference.cache

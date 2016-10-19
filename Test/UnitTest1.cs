@@ -6,6 +6,7 @@ using Data;
 using System.Data;
 using System.Linq;
 using Business;
+using System.Collections.Generic;
 
 namespace Test
 {
@@ -16,14 +17,19 @@ namespace Test
         public void TestMethod1()
         {
 
+            Reports.ReportsMethods r = new Reports.ReportsMethods();
 
-            ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
-           
+            r.generatePhoneSaleReport();
 
-            Client c = cb.getClientByUserName("yarr");
-            c.Name = "Brayan";
-            cb.updateClient(c);
-            Console.Write(c.LastName_1);
+            //SaleData pd = new SaleData("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+
+
+            //Object[] a = pd.getBestClients();
+
+            //List<Client> c = (List<Client>) a[0];
+            //List<int> i = (List<int>)a[1];
+
+            //int x = 0;
 
             //SaleServiceReference.SaleServiceClient c = new SaleServiceReference.SaleServiceClient();
 

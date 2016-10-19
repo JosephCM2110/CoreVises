@@ -84,6 +84,10 @@
       <Project>{ccac557e-8602-411f-b5fa-4a17cada56dd}</Project>
       <Name>Encryption</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{95fdc547-2020-48f6-bb29-7acea482727a}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

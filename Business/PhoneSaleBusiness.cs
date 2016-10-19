@@ -29,6 +29,11 @@ namespace Business
             return PhoneSaleData.DeletePhoneSale(idPhoneSale);
         }
 
+        public Object[] getTop5PhoneSaleWeek()
+        {
+            return this.phoneSaleData.getTop5PhoneSaleWeek();
+        }
+
         public string ConnectionString
         {
             get
