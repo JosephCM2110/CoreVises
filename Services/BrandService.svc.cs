@@ -23,20 +23,19 @@ namespace Services
             return r;
         }
 
-        public List<Brand> getAllBrands()
+        public string getAllBrands()
         {
+            string response = "";
             BrandBusiness b = new BrandBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
             EncryptionMethods em = new EncryptionMethods();
             DataSet dsBrand = b.getAllBrands();
             DataRowCollection dataRowCollection = dsBrand.Tables["TBrand"].Rows;
-            List<Brand> brands = new List<Brand>();
             foreach (DataRow currentRow in dataRowCollection)
             {
-                Brand brandTemp = new Brand(Int32.Parse(currentRow["idBrand"].ToString()), currentRow["name"].ToString());
-                brands.Add(brandTemp);
+               response += currentRow["idBrand"].ToString()+ ";" + currentRow["name"].ToString()+"#";
             }
 
-            return brands;
+            return response;
         }
 
         public int insertBrand(int idBrand, string name)
@@ -55,6 +54,13 @@ namespace Services
             EncryptionMethods em = new EncryptionMethods();
             int r = b.updateBrand(br);
             return r;
+        }
+
+        public Brand getBrandById(int idBrand)
+        {
+            BrandBusiness b = new BrandBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            EncryptionMethods em = new EncryptionMethods();
+            return b.getBrandById(idBrand);
         }
     }
 }

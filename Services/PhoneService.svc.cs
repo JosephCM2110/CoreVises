@@ -16,38 +16,25 @@ namespace Services
     public class PhoneService : IPhoneService
     {
 
-        public List<Phone> getPhones()
+        public string getPhones()
         {
+            string response = "";
             PhoneBusiness pb = new PhoneBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
-            BrandBusiness bb = new BrandBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
             EncryptionMethods em = new EncryptionMethods();
             DataSet dsPhone = pb.getPhones();
             DataRowCollection dataRowCollection = dsPhone.Tables["TPhone"].Rows;
-            List<Phone> phones = new List<Phone>();
-            int flash;
+            BrandBusiness bb = new BrandBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            
             foreach (DataRow currentRow in dataRowCollection)
             {
-                Brand brandTemp = bb.getBrandById(Int32.Parse(currentRow["idBrand"].ToString()));
-                if (currentRow["flash"].ToString() == "True")
-                    flash = 1;
-                else
-                    flash = 0;
-                int idPhone = Int32.Parse(currentRow["idPhone"].ToString());
-                string model = currentRow["model"].ToString();
-                string os = currentRow["OS"].ToString();
-                string nm = currentRow["networkMode"].ToString();
-                string im = currentRow["internalMemory"].ToString();
-                string exm = currentRow["externalMemory"].ToString();
-                int pixels = Int32.Parse(currentRow["pixels"].ToString());
-                string resol = currentRow["resolution"].ToString();
-                int price = (int) Double.Parse(currentRow["price"].ToString());
-                int quantity = Int32.Parse(currentRow["quantity"].ToString());
-                string imgP = currentRow["imagePhone"].ToString();
-                Phone phoneTemp = new Phone(idPhone, brandTemp, model, os, nm, im, exm, pixels, flash, resol, price, quantity, imgP);
-                phones.Add(phoneTemp);
+                Brand brand = bb.getBrandById(Int32.Parse(currentRow["idBrand"].ToString()));
+                response +=currentRow["idPhone"].ToString() + ";" +currentRow["model"].ToString() + ";" + brand.Name+ ";" + currentRow["OS"].ToString()
+                    + ";" + currentRow["networkMode"].ToString() + ";" + currentRow["internalMemory"].ToString() + ";" + currentRow["externalMemory"].ToString() + ";" + currentRow["pixels"].ToString() + ";" +
+                    currentRow["flash"].ToString() + ";" + currentRow["resolution"].ToString() + ";" + currentRow["price"].ToString() + ";" + currentRow["quantity"].ToString() + ";" + currentRow["imagePhone"].ToString() + "#";
+                
             }
 
-            return phones;
+            return response;
         }
 
         public int insertPhone(int idPhone, int idBrand, string model, string os, string networkmode, string internalMemory,
@@ -61,6 +48,13 @@ namespace Services
                 flash, resolution, price, quantity, image);
             int response = pb.insertPhone(phone);
             return response;
+        }
+
+        public Phone getPhoneById(int idPhone)
+        {
+            EncryptionMethods em = new EncryptionMethods();
+            PhoneBusiness pb = new PhoneBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            return pb.getPhoneById(idPhone);
         }
 
     }

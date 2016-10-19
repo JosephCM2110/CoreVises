@@ -23,7 +23,11 @@ namespace Services
         int deleteBrand(int idBrand);
 
         [OperationContract]
-        List<Brand> getAllBrands();
+        string getAllBrands();
+
+        [OperationContract]
+        Brand getBrandById(int idBrand);
+
 
     }
 }

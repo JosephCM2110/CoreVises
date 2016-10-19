@@ -20,6 +20,10 @@ namespace Services
             int price, int quantity, string image);
 
         [OperationContract]
-        List<Phone> getPhones();
+        string getPhones();
+
+        [OperationContract]
+        Phone getPhoneById(int idPhone);
     }
 }
+

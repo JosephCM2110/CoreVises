@@ -45,7 +45,7 @@ namespace CoreVises.Presentation
                 string path = @"C:\Users\Brayan\Source\Repos\CoreVises\CoreVises";
                 string imagePath = image.ImageUrl;
                 string newimagePath = imagePath.Remove(0, 2);
-                string filePath = path + imagePath;
+                string filePath = path + imagePath;                      
                 File.Delete(filePath);
                 e.NewValues["imagePhone"] = "../Images/Phones/" + fl1.FileName;
                 fl1.SaveAs(Server.MapPath("~/Images/Phones/") + fl1.FileName);
