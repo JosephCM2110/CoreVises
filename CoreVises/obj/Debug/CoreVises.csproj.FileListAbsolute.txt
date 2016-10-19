@@ -154,3 +154,6 @@ C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Data.pdb
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Debug\CoreVises.csprojResolveAssemblyReference.cache
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Debug\CoreVises.dll
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\obj\Debug\CoreVises.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Reports.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\itextsharp.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Reports.pdb

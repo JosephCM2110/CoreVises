@@ -26,36 +26,40 @@ namespace Services
             return response;
         }
 
-        public string insertClient(string idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser, string email, string numberCard, string addressDirection, string postalCode, string svcCard, string key)
+        public string insertClient(string client, string key)
         {
             string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
             ClientBusiness cb = new ClientBusiness(conn);
             EncryptionMethods em = new EncryptionMethods();
-            Client client = new Client(Int32.Parse(em.decrypting(idUser,key)), em.decrypting(name,key), em.decrypting(lastName_1,key),em.decrypting(lastName_2,key), em.decrypting(nameUser,key)
-                ,em.decrypting(passwordUser,key), em.decrypting(email,key), em.decrypting(numberCard,key),em.decrypting(addressDirection,key),em.decrypting(postalCode,key), em.decrypting(svcCard,key));
-            int r =  cb.insertClient(client);
+            string text = em.decrypting(client, key);
+            string[] fields = text.Split(';');
+            Client clientO = new Client(Int32.Parse(fields[0]), fields[1], fields[2], fields[3], fields[4], fields[5], fields[6], fields[7], fields[8], fields[9], fields[10]);
+            int r =  cb.insertClient(clientO);
             string response = em.encrypt(r + "", key);
             return response;
         }
 
-        public string updateClient(string idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser, string email, string numberCard, string addressDirection, string postalCode, string svcCard, string key)
+        public string updateClient(string client, string key)
         {
             string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
             ClientBusiness cb = new ClientBusiness(conn);
             EncryptionMethods em = new EncryptionMethods();
-            Client client = new Client(Int32.Parse(em.decrypting(idUser, key)), em.decrypting(name, key), em.decrypting(lastName_1, key), em.decrypting(lastName_2, key), em.decrypting(nameUser, key)
-                , em.decrypting(passwordUser, key), em.decrypting(email, key), em.decrypting(numberCard, key), em.decrypting(addressDirection, key), em.decrypting(postalCode, key), em.decrypting(svcCard, key));
-            int r = cb.updateClient(client);
+            string text = em.decrypting(client, key);
+            string[] fields = text.Split(';');
+            Client clientO = new Client(Int32.Parse(fields[0]),fields[1], fields[2], fields[3], fields[4], fields[5], fields[6], fields[7], fields[8], fields[9], fields[10]);
+            int r = cb.updateClient(clientO);
             string response = em.encrypt(r + "", key);
             return response;
         }
 
-        public string verifyExistsClient(string nameUser, string passwordUser, string key)
+        public string verifyExistsClient(string client, string key)
         {
             string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
             ClientBusiness cb = new ClientBusiness(conn);
             EncryptionMethods em = new EncryptionMethods();
-            int r =  cb.verifyExistsClient(em.decrypting(nameUser,key),em.decrypting( passwordUser,key));
+            string text = em.decrypting(client, key);
+            string[] fields = text.Split(';');
+            int r =  cb.verifyExistsClient(fields[0],fields[1]);
             string response = em.encrypt(r + "", key);
             return response;
         }

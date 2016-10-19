@@ -114,6 +114,7 @@
   <ItemGroup>
     <Content Include="JS\ai.0.22.9-build00167.js" />
     <Content Include="JS\ai.0.22.9-build00167.min.js" />
+    <Content Include="Presentation\Reports.aspx" />
     <Content Include="Presentation\BrandMenu.aspx" />
     <Content Include="Presentation\InsertAdministrator.aspx" />
     <Content Include="Presentation\InsertBrand.aspx" />
@@ -150,6 +151,13 @@
     </Compile>
     <Compile Include="Presentation\base.Master.designer.cs">
       <DependentUpon>base.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentation\BrandMenu.aspx.cs">
       <DependentUpon>BrandMenu.aspx</DependentUpon>
@@ -236,6 +244,10 @@
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{F995E670-E92A-42A2-BA45-08CFE39CC6F6}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{95fdc547-2020-48f6-bb29-7acea482727a}</Project>
+      <Name>Reports</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -58,7 +58,7 @@
                         <a href="PhoneMenu.aspx"><i class="fa fa-edit "></i>Phones</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-edit "></i>Reports</a>
+                        <a href="Reports.aspx"><i class="fa fa-edit "></i>Reports</a>
                     </li>
                 </ul>
 
