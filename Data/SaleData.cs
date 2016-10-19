@@ -71,5 +71,48 @@ namespace Data
             return answer;
         }
 
+        public Object[] getBestClients()
+        {
+            SqlConnection sqlConn = new SqlConnection(this.connectionString);
+
+            //string sql
+            string sqlSelect = "select top 10 TSale.idClient, SUM(TSale.total) as 'total' from TSale where DATEDIFF(M, TSale.dateSale, " +
+                "GETDATE()) <= 1 group by idClient order by total DESC";
+
+            //establecer la conexion con el adaptador
+            SqlDataAdapter sqlDataAdapterProperty = new SqlDataAdapter();
+
+            //configurar el adaptador
+            sqlDataAdapterProperty.SelectCommand = new SqlCommand();
+            sqlDataAdapterProperty.SelectCommand.CommandText = sqlSelect;
+            sqlDataAdapterProperty.SelectCommand.Connection = sqlConn;
+
+            //definir el data set
+            DataSet datasetClients = new DataSet();
+
+            //dataset para guardar los resultados de la consulta
+            sqlDataAdapterProperty.Fill(datasetClients);
+
+            //cerrar la conexion con el adaptador
+            sqlDataAdapterProperty.SelectCommand.Connection.Close();
+
+            DataRowCollection dataRowCollection = datasetClients.Tables[0].Rows;
+            List<Client> clients = new List<Client>();
+            List<int> quantities = new List<int>();
+            foreach (DataRow currentRow in dataRowCollection)
+            {
+                ClientData cd = new ClientData(this.connectionString);
+                Client clientTemp = cd.getClientById(Int32.Parse(currentRow[0].ToString()));
+                clients.Add(clientTemp);
+                quantities.Add((int) float.Parse(currentRow[1].ToString()));
+            }
+
+            Object[] returnValues = new Object[2];
+            returnValues[0] = clients;
+            returnValues[1] = quantities;
+
+            return returnValues;
+        }
+
     }
 }

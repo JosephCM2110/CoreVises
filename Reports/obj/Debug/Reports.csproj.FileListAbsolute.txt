@@ -1,0 +1,12 @@
+C:\Users\gollo\Source\Repos\CoreVises\Reports\obj\Debug\Reports.csprojResolveAssemblyReference.cache
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\Reports.dll
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\Reports.pdb
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\Business.dll
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\itextsharp.dll
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\Data.dll
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\Domain.dll
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\Business.pdb
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\Data.pdb
+C:\Users\gollo\Source\Repos\CoreVises\Reports\bin\Debug\Domain.pdb
+C:\Users\gollo\Source\Repos\CoreVises\Reports\obj\Debug\Reports.dll
+C:\Users\gollo\Source\Repos\CoreVises\Reports\obj\Debug\Reports.pdb

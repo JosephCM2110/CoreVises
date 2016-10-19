@@ -29,6 +29,11 @@ namespace Business
             return saleData.deleteSale(idSale);
         }
 
+        public Object[] getBestClients()
+        {
+            return this.saleData.getBestClients();
+        }
+
         public string ConnectionString
         {
             get
