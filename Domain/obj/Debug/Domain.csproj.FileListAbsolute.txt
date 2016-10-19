@@ -2,13 +2,13 @@ C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\Domain\bin\Debug\
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\Domain\bin\Debug\Domain.pdb
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\Domain\obj\Debug\Domain.dll
 C:\Users\gollo\Documents\Visual Studio 2015\Projects\CoreVises\Domain\obj\Debug\Domain.pdb
-C:\Users\Brayan\Source\Repos\CoreVises\Domain\bin\Debug\Domain.dll
-C:\Users\Brayan\Source\Repos\CoreVises\Domain\bin\Debug\Domain.pdb
-C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
-C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Debug\Domain.dll
-C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Debug\Domain.pdb
 C:\Users\gollo\Source\Repos\CoreVises\Domain\bin\Debug\Domain.dll
 C:\Users\gollo\Source\Repos\CoreVises\Domain\bin\Debug\Domain.pdb
 C:\Users\gollo\Source\Repos\CoreVises\Domain\obj\Debug\Domain.dll
 C:\Users\gollo\Source\Repos\CoreVises\Domain\obj\Debug\Domain.pdb
 C:\Users\gollo\Source\Repos\CoreVises\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\bin\Debug\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\bin\Debug\Domain.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Debug\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Domain\obj\Debug\Domain.pdb

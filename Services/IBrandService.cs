@@ -14,19 +14,19 @@ namespace Services
     public interface IBrandService
     {
         [OperationContract]
-        int insertBrand(int idBrand, string name);
+        string insertBrand(string idBrand, string name, string key);
 
         [OperationContract]
-        int updateBrand(int idBrand, string name);
+        string updateBrand(string idBrand, string name, string key);
 
         [OperationContract]
-        int deleteBrand(int idBrand);
+        string deleteBrand(string idBrand, string key);
 
         [OperationContract]
-        string getAllBrands();
+        string getAllBrands(string key);
 
         [OperationContract]
-        Brand getBrandById(int idBrand);
+        string getBrandById(string idBrand, string key);
 
 
     }

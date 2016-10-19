@@ -12,6 +12,6 @@ namespace Services
     public interface ISaleService
     {
         [OperationContract]
-        int registerSale(int idClient, string phones, int total);
+        string registerSale(string idClient, string phones, string total,string key);
     }
 }

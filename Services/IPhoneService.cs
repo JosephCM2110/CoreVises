@@ -15,15 +15,10 @@ namespace Services
     public interface IPhoneService
     {
         [OperationContract]
-        int insertPhone(int idPhone, int idBrand, string model, string os, string networkmode, string internalMemory,
-            string externalMemory, int pixels, int flash, string resolution,
-            int price, int quantity, string image);
+        string getPhones(string key);
 
         [OperationContract]
-        string getPhones();
-
-        [OperationContract]
-        Phone getPhoneById(int idPhone);
+        string getPhoneById(string idPhone, string key);
     }
 }
 

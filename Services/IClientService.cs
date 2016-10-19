@@ -13,20 +13,20 @@ namespace Services
     public interface IClientService
     {
         [OperationContract]
-        int insertClient(int idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser,
-            string email, string numberCard, string addressDirection, string postalCode, string svcCard);
+        string insertClient(string idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser,
+            string email, string numberCard, string addressDirection, string postalCode, string svcCard, string key);
 
         [OperationContract]
-        int updateClient(int idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser,
-            string email, string numberCard, string addressDirection, string postalCode, string svcCard);
+        string updateClient(string idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser,
+            string email, string numberCard, string addressDirection, string postalCode, string svcCard, string key);
 
         [OperationContract]
-        int deleteClient(int idClient);
+        string deleteClient(string idClient, string key);
 
         [OperationContract]
-        int verifyExistsClient(string nameUser, string passwordUser);
+        string verifyExistsClient(string nameUser, string passwordUser, string key);
 
         [OperationContract]
-        Client getClient(string nameUser);
+        string getClient(string nameUser, string key);
     }
 }

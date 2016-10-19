@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Web.Configuration;
 
 namespace Services
 {
@@ -16,14 +17,15 @@ namespace Services
     public class PhoneService : IPhoneService
     {
 
-        public string getPhones()
+        public string getPhones(string key)
         {
             string response = "";
-            PhoneBusiness pb = new PhoneBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            PhoneBusiness pb = new PhoneBusiness(conn);
             EncryptionMethods em = new EncryptionMethods();
             DataSet dsPhone = pb.getPhones();
             DataRowCollection dataRowCollection = dsPhone.Tables["TPhone"].Rows;
-            BrandBusiness bb = new BrandBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            BrandBusiness bb = new BrandBusiness(conn);
             
             foreach (DataRow currentRow in dataRowCollection)
             {
@@ -34,27 +36,23 @@ namespace Services
                 
             }
 
-            return response;
+            return em.encrypt(response,key);
         }
 
-        public int insertPhone(int idPhone, int idBrand, string model, string os, string networkmode, string internalMemory,
-            string externalMemory, int pixels, int flash, string resolution, int price, int quantity, string image)
+        public string getPhoneById(string idPhone, string key)
         {
-            PhoneBusiness pb = new PhoneBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
             EncryptionMethods em = new EncryptionMethods();
-            BrandBusiness bb = new BrandBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
-            Brand brand = bb.getBrandById(idBrand);
-            Phone phone = new Phone(idPhone, brand, model, os, networkmode, internalMemory, externalMemory, pixels,
-                flash, resolution, price, quantity, image);
-            int response = pb.insertPhone(phone);
-            return response;
-        }
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            int t = Int32.Parse(em.decrypting(idPhone, key));
+            PhoneBusiness pb = new PhoneBusiness(conn);
+            BrandBusiness bb = new BrandBusiness(conn);
+            Phone phone = pb.getPhoneById(t);
+            Brand brand = bb.getBrandById(phone.IdPhone);
 
-        public Phone getPhoneById(int idPhone)
-        {
-            EncryptionMethods em = new EncryptionMethods();
-            PhoneBusiness pb = new PhoneBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
-            return pb.getPhoneById(idPhone);
+            string response = phone.IdPhone + ";" + phone.Model + ";" + brand.Name + ";" + phone.OS + ";" + phone.NetworkMode + ";" + phone.InternalMemory + ";" + phone.ExternalMemory + ";" +
+                phone.Pixels + ";" +phone.Flash + ";" + phone.Resolution + ";" + phone.Price + ";" + phone.Quantity + ";" + phone.Image;
+
+            return em.encrypt(response, key);
         }
 
     }

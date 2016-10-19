@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\KeggPhonesImage.png" />
     <Content Include="Images\logo.png" />
     <Content Include="index.aspx" />
     <Content Include="packages.config" />
@@ -225,6 +226,7 @@
   <ItemGroup>
     <Folder Include="Fonts\" />
     <Folder Include="Images\Phones\" />
+    <Folder Include="ReportsPDF\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

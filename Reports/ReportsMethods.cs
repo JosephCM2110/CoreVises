@@ -21,7 +21,7 @@ namespace Reports
         public void generatePhoneSaleReport()
         {
             Document doc = new Document(PageSize.A4, 10, 10, 10, 10);
-            string filename = Path.GetFullPath("C:/Users/gollo/Source/Repos/CoreVises/ReportsPDF/Report" + Guid.NewGuid().ToString().Substring(0, 7) + "_" + DateTime.Today.Date.ToString("yyyy-MM-dd") + ".pdf");
+            string filename = Path.GetFullPath("C:/Users/Brayan/Source/Repos/CoreVises/CoreVises/ReportsPDF/Report" + Guid.NewGuid().ToString().Substring(0, 7) + "_" + DateTime.Today.Date.ToString("yyyy-MM-dd") + ".pdf");
             FileStream file = new FileStream(filename, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             PdfWriter.GetInstance(doc, file);
             doc.Open();
@@ -35,7 +35,7 @@ namespace Reports
             Paragraph pDate = new Paragraph(new Phrase("Date Report: " + DateTime.Now.ToString("d"), FontFactory.GetFont("ARIAL", 12, iTextSharp.text.Font.NORMAL)));
             pDate.Alignment = Element.ALIGN_JUSTIFIED;
 
-            Image waterMaker = Image.GetInstance("C:/Users/gollo/Source/Repos/CoreVises/Reports/KeggPhonesImage.png");
+            Image waterMaker = Image.GetInstance("C:/Users/Brayan/Source/Repos/CoreVises/CoreVises/Images/KeggPhonesImage.png");
             waterMaker.SetAbsolutePosition(100, 300);
             waterMaker.ScalePercent(75);
 
@@ -112,7 +112,7 @@ namespace Reports
         public void generateClientReport()
         {
             Document doc = new Document(PageSize.A4, 10, 10, 10, 10);
-            string filename = Path.GetFullPath("C:/Users/gollo/Source/Repos/CoreVises/ReportsPDF/Report" + Guid.NewGuid().ToString().Substring(0, 7) + "_" + DateTime.Today.Date.ToString("yyyy-MM-dd") + ".pdf");
+            string filename = Path.GetFullPath("C:/Users/Brayan/Source/Repos/CoreVises/CoreVises/ReportsPDF/Report" + Guid.NewGuid().ToString().Substring(0, 7) + "_" + DateTime.Today.Date.ToString("yyyy-MM-dd") + ".pdf");
             FileStream file = new FileStream(filename, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             PdfWriter.GetInstance(doc, file);
             doc.Open();
@@ -126,7 +126,7 @@ namespace Reports
             Paragraph pDate = new Paragraph(new Phrase("Date Report: " + DateTime.Now.ToString("d"), FontFactory.GetFont("ARIAL", 12, iTextSharp.text.Font.NORMAL)));
             pDate.Alignment = Element.ALIGN_JUSTIFIED;
 
-            Image waterMaker = Image.GetInstance("C:/Users/gollo/Source/Repos/CoreVises/Reports/KeggPhonesImage.png");
+            Image waterMaker = Image.GetInstance("C:/Users/Brayan/Source/Repos/CoreVises/CoreVises/Images/KeggPhonesImage.png");
             waterMaker.SetAbsolutePosition(100, 300);
             waterMaker.ScalePercent(75);
 

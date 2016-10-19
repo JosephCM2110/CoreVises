@@ -7,6 +7,7 @@ using System.Text;
 using Business;
 using Encryption;
 using Domain;
+using System.Web.Configuration;
 
 namespace Services
 {
@@ -14,47 +15,60 @@ namespace Services
     // NOTE: In order to launch WCF Test Client for testing this service, please select ClientService.svc or ClientService.svc.cs at the Solution Explorer and start debugging.
     public class ClientService : IClientService
     {
-        public int deleteClient(int idClient)
+        public string deleteClient(string idClient, string key)
         {
-            ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
             EncryptionMethods em = new EncryptionMethods();
-            int response = cb.deleteClient(idClient);
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            ClientBusiness cb = new ClientBusiness(conn);
+            int t = Int32.Parse(em.decrypting(idClient + "", key));
+            int r = cb.deleteClient(t);
+            string response = em.encrypt(r + "", key);
             return response;
         }
 
-        public int insertClient(int idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser, string email, string numberCard, string addressDirection, string postalCode, string svcCard)
+        public string insertClient(string idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser, string email, string numberCard, string addressDirection, string postalCode, string svcCard, string key)
         {
-            ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            ClientBusiness cb = new ClientBusiness(conn);
             EncryptionMethods em = new EncryptionMethods();
-            Client client = new Client(idUser, name, lastName_1, lastName_2, nameUser, passwordUser, email, numberCard,
-                addressDirection, postalCode, svcCard);
-            int response =  cb.insertClient(client);
+            Client client = new Client(Int32.Parse(em.decrypting(idUser,key)), em.decrypting(name,key), em.decrypting(lastName_1,key),em.decrypting(lastName_2,key), em.decrypting(nameUser,key)
+                ,em.decrypting(passwordUser,key), em.decrypting(email,key), em.decrypting(numberCard,key),em.decrypting(addressDirection,key),em.decrypting(postalCode,key), em.decrypting(svcCard,key));
+            int r =  cb.insertClient(client);
+            string response = em.encrypt(r + "", key);
             return response;
         }
 
-        public int updateClient(int idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser, string email, string numberCard, string addressDirection, string postalCode, string svcCard)
+        public string updateClient(string idUser, string name, string lastName_1, string lastName_2, string nameUser, string passwordUser, string email, string numberCard, string addressDirection, string postalCode, string svcCard, string key)
         {
-            ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            ClientBusiness cb = new ClientBusiness(conn);
             EncryptionMethods em = new EncryptionMethods();
-            Client client = new Client(idUser, name, lastName_1, lastName_2, nameUser, passwordUser, email, numberCard,
-                addressDirection, postalCode, svcCard);
-            int response = cb.updateClient(client);
+            Client client = new Client(Int32.Parse(em.decrypting(idUser, key)), em.decrypting(name, key), em.decrypting(lastName_1, key), em.decrypting(lastName_2, key), em.decrypting(nameUser, key)
+                , em.decrypting(passwordUser, key), em.decrypting(email, key), em.decrypting(numberCard, key), em.decrypting(addressDirection, key), em.decrypting(postalCode, key), em.decrypting(svcCard, key));
+            int r = cb.updateClient(client);
+            string response = em.encrypt(r + "", key);
             return response;
         }
 
-        public int verifyExistsClient(string nameUser, string passwordUser)
+        public string verifyExistsClient(string nameUser, string passwordUser, string key)
         {
-            ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            ClientBusiness cb = new ClientBusiness(conn);
             EncryptionMethods em = new EncryptionMethods();
-            int response =  cb.verifyExistsClient(nameUser, passwordUser);
+            int r =  cb.verifyExistsClient(em.decrypting(nameUser,key),em.decrypting( passwordUser,key));
+            string response = em.encrypt(r + "", key);
             return response;
         }
 
-        public Client getClient(string nameUser)
+        public string getClient(string nameUser, string key)
         {
-            ClientBusiness cb = new ClientBusiness("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            string conn = WebConfigurationManager.ConnectionStrings["KeggPhonesConnectionString"].ToString();
+            ClientBusiness cb = new ClientBusiness(conn);
             EncryptionMethods em = new EncryptionMethods();
-            return cb.getClientByUserName(nameUser);
+            Client client = cb.getClientByUserName(em.decrypting(nameUser,key));
+            string response = client.IdUser + ";" + client.Name + ";" + client.LastName_1 + ";" + client.LastName_2 + ";" + client.PasswordUser + ";" + client.Email + ";" + client.NumberCard + ";" +
+                client.AddressDirection + ";" + client.PostalCode + ";" + client.SvcCard;
+            return em.encrypt(response,key);
         }
     }
 }
