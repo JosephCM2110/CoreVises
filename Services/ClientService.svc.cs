@@ -60,7 +60,7 @@ namespace Services
             string text = em.decrypting(client, key);
             string[] fields = text.Split(';');
             int r =  cb.verifyExistsClient(fields[0],fields[1]);
-            string response = em.encrypt(r + "", key);
+            string response = em.encrypt(r+"", key);
             return response;
         }
 

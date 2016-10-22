@@ -37,3 +37,6 @@ C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Data.dll
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Business.pdb
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Domain.pdb
 C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Data.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Reports.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\itextsharp.dll
+C:\Users\Brayan\Source\Repos\CoreVises\CoreVises\bin\Reports.pdb

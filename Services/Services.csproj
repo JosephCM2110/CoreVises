@@ -44,6 +44,9 @@
     <Reference Include="Encryption">
       <HintPath>..\Encryption\obj\Debug\Encryption.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Reports\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -112,6 +115,7 @@
     <Content Include="BrandService.svc" />
     <Content Include="ClientService.svc" />
     <Content Include="PhoneService.svc" />
+    <Content Include="PhonesLikeService.svc" />
     <Content Include="SaleService.svc" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -129,10 +133,14 @@
     <Compile Include="IBrandService.cs" />
     <Compile Include="IClientService.cs" />
     <Compile Include="IPhoneService.cs" />
+    <Compile Include="IPhonesLikeService.cs" />
     <Compile Include="ISaleService.cs" />
     <Compile Include="IService2.cs" />
     <Compile Include="PhoneService.svc.cs">
       <DependentUpon>PhoneService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="PhonesLikeService.svc.cs">
+      <DependentUpon>PhonesLikeService.svc</DependentUpon>
     </Compile>
     <Compile Include="SaleService.svc.cs">
       <DependentUpon>SaleService.svc</DependentUpon>

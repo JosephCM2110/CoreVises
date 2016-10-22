@@ -30,7 +30,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="/Images/logo.png" width="70" height="70" />
+                        <img src="./Images/logo.png" width="70" height="70" />
 
                     </a>
                     

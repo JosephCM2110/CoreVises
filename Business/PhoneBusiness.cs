@@ -44,6 +44,10 @@ namespace Business
         {
             return phoneData.getPhones();
         }
+        public DataSet getPhonesLike(string word)
+        {
+            return phoneData.getPhonesLike(word);
+        }
 
         public Phone getPhoneById(int idPhone)
         {

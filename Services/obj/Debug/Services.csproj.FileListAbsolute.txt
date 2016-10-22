@@ -98,3 +98,4 @@ C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Data.pdb
 C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Debug\Services.dll
 C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Debug\Services.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\itextsharp.dll

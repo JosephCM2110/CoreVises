@@ -17,9 +17,19 @@ namespace Test
         public void TestMethod1()
         {
 
-            Reports.ReportsMethods r = new Reports.ReportsMethods();
+            //PhoneData data = new PhoneData("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
+            //DataSet dsPhones = data.getPhonesLike("8");
 
-            r.generatePhoneSaleReport();
+            //DataRowCollection dataRowCollection = dsPhones.Tables["TPhone"].Rows;
+
+            //foreach (DataRow currentRow in dataRowCollection)
+            //{
+            //    Console.WriteLine(currentRow["model"]);
+
+            //}
+            //Reports.ReportsMethods r = new Reports.ReportsMethods();
+
+            //r.generatePhoneSaleReport();
 
             //SaleData pd = new SaleData("Data Source = 163.178.107.130; Initial Catalog = KeggPhones; User Id = sqlserver; Password = saucr.12");
 
@@ -45,13 +55,16 @@ namespace Test
             //string texto = "23452.we,l,tr,r";
             //Console.WriteLine(texto);
             //Console.WriteLine("------------------------------------------------------------------");
-            //string key = "me";
-            //EncryptionMethods e = new EncryptionMethods();
+            string key = "yarr";
+            EncryptionMethods e = new EncryptionMethods();
             //string textoe = e.encrypt(texto, key);
             //Console.WriteLine(textoe);
-            //Console.WriteLine("------------------------------------------------------------------");
-            //string textodes = e.decrypting(textoe, key);
-            //Console.WriteLine(textodes);
+            Console.WriteLine("------------------------------------------------------------------");
+            string textodes = e.decrypting("{,c4d/us%/s63s713/?yj2}y1/$y1/%}ju0:4/%}$2}c]3¿}f, }f,}c{/z.%q,bk@w62s-8%fvf%c6%hh,.zu1uhd75kj5s6f,k@a.t:;s630yu-qy08018@wy:?l0u5v9$79_0%u[0$5#,mmuy2s4u;7ssnkg32e.yt3]c/9cz!b/w8/s63s713/¿yj2}y1/]y1/%}jgs4_fc%fy%}j2!?f,} f,}}j3cz%u8,i@dw:d0-/uwvmut6]:y,%b.12:u7.@15zhw,rrr.1obs:e{y2s8y-j{1/r;y!x302g:9ai]_-u.[-y?#__4u6d042p#sz%2g0dv.6[", key);
+            Console.WriteLine(textodes);
+
+
+
 
 
             //PhoneServiceReference.PhoneServiceClient c = new PhoneServiceReference.PhoneServiceClient();

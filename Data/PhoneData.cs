@@ -228,6 +228,35 @@ namespace Data
             return phone;
         }
 
+        public DataSet getPhonesLike(string word)
+        {
+            //conexion con la bd
+            SqlConnection sqlConn = new SqlConnection(this.connectionString);
+
+            //string sql
+            string sqlSelect = "Select idPhone,TPhone.idBrand,model,OS,networkMode,internalMemory,externalMemory,pixels,flash,resolution,price,quantity,imagePhone "+
+                "From TPhone INNER JOIN TBrand ON TPhone.idBrand = TBrand.idBrand Where model like '%" + word + "%'  OR name like '%" + word + "%';";
+
+            //establecer la conexion con el adaptador
+            SqlDataAdapter sqlDataAdapterProperty = new SqlDataAdapter();
+
+            //configurar el adaptador
+            sqlDataAdapterProperty.SelectCommand = new SqlCommand();
+            sqlDataAdapterProperty.SelectCommand.CommandText = sqlSelect;
+            sqlDataAdapterProperty.SelectCommand.Connection = sqlConn;
+
+            //definir el data set
+            DataSet datasetPhones = new DataSet();
+
+            //dataset para guardar los resultados de la consulta
+            sqlDataAdapterProperty.Fill(datasetPhones, "TPhone");
+
+            //cerrar la conexion con el adaptador
+            sqlDataAdapterProperty.SelectCommand.Connection.Close();
+
+            return datasetPhones;
+        }
+
 
     }
 }

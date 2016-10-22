@@ -1,0 +1,12 @@
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\Reports.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\Reports.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\Business.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\Domain.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\itextsharp.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\Data.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\Business.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\Domain.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\bin\Release\Data.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\obj\Release\Reports.csprojResolveAssemblyReference.cache
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\obj\Release\Reports.dll
+C:\Users\Brayan\Source\Repos\CoreVises\Reports\obj\Release\Reports.pdb
