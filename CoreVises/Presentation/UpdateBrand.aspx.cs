@@ -11,17 +11,12 @@ namespace CoreVises.Presentation
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            HttpCookie cookieLogin = Request.Cookies["user"];
+            if (cookieLogin == null)
+            {
+                Response.Redirect("../index.aspx");
+            }
         }
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
-        {
-
-        }
     }
 }

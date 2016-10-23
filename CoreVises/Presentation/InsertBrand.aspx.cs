@@ -14,6 +14,11 @@ namespace CoreVises.Presentation
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie cookieLogin = Request.Cookies["user"];
+            if (cookieLogin == null)
+            {
+                Response.Redirect("../index.aspx");
+            }
             HttpCookie cookie = Request.Cookies["message"];
             if (cookie != null)
             {

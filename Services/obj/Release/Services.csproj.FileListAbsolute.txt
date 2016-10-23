@@ -32,3 +32,4 @@ C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\Data.pdb
 C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
 C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Release\Services.dll
 C:\Users\Brayan\Source\Repos\CoreVises\Services\obj\Release\Services.pdb
+C:\Users\Brayan\Source\Repos\CoreVises\Services\bin\itextsharp.dll

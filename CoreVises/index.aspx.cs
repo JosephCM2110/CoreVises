@@ -17,6 +17,12 @@ namespace CoreVises
             {
                 lblMessage.Text = Request.Cookies["message"].Value;
             }
+            HttpCookie cookieLogin = Request.Cookies["user"];
+            if (cookieLogin != null)
+            {
+                Response.Cookies["user"].Value = null;
+                Response.Cookies["user"].Expires = DateTime.Now.AddSeconds(-1);
+            }
         }
 
         protected void btnAccept_Click(object sender, EventArgs e)
@@ -32,6 +38,8 @@ namespace CoreVises
             }
             else
             {
+                Response.Cookies["user"].Value = txtUser.Text;
+                Response.Cookies["user"].Expires = DateTime.Now.AddSeconds(1200);
                 Response.Redirect("./Presentation/Principal.aspx");
             }
             

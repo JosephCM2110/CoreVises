@@ -97,6 +97,7 @@
     <Content Include="Images\KeggPhonesImage.png" />
     <Content Include="Images\logo.png" />
     <Content Include="index.aspx" />
+    <Content Include="JS\EncryptionMethods.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

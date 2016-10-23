@@ -12,16 +12,21 @@ namespace CoreVises.Presentation
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie cookieLogin = Request.Cookies["user"];
+            if (cookieLogin == null)
+            {
+                Response.Redirect("../index.aspx");
+            }
             if (Request.Form["__EVENTTARGET"] == "btnClients")
             {
-                //llamamos el metodo que queremos ejecutar, en este caso el evento onclick del boton Button2
+                
                 btnClients_Click(this, new EventArgs());
             }
             else
             {
                 if (Request.Form["__EVENTTARGET"] == "btnPhones")
                 {
-                    //llamamos el metodo que queremos ejecutar, en este caso el evento onclick del boton Button2
+                    
                     btnClients_Click(this, new EventArgs());
                 }
             }
