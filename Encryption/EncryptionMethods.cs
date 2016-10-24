@@ -14,7 +14,8 @@ namespace Encryption
 
         public EncryptionMethods()
         {
-            this.alphabet = "abcdefghijklmnopqrstuvwxyz1234567890,.:;/@-_%!¿?$#[]{} ";
+            this.alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST"
+                    + "UVWXYZ1234567890,.:;/-_%!¿?$#[]{} ";
             this.alphabetChar = alphabet.ToCharArray();
         }
 
@@ -84,7 +85,7 @@ namespace Encryption
 
             for(int i = 0; i < this.alphabet.Length; i++)
             {
-                if(char.ToUpperInvariant(letter) == char.ToUpperInvariant(alphabetChar[i]))
+                if(letter == alphabetChar[i])
                 {
                     pos = i + 1;
                     i = this.alphabet.Length;

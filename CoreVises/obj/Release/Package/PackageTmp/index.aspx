@@ -76,7 +76,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:Button ID="btnAccept" runat="server" Text="Login" OnClick="btnAccept_Click" Height="49px" Width="485px" />
+                                <asp:Button ID="btnAccept" runat="server" Text="Login" OnClick="btnAccept_Click"  Height="49px" Width="485px" />
                             </td>
                         </tr>
                         <tr>
@@ -112,5 +112,6 @@
             </div>
         </div>
      </body>
+
 </html>
 

@@ -52,15 +52,15 @@ namespace Test
             //Console.WriteLine(c.Model);
             //Console.ReadLine();
 
-            //string texto = "23452.we,l,tr,r";
-            //Console.WriteLine(texto);
-            //Console.WriteLine("------------------------------------------------------------------");
+            string texto = "http://localhost/CoreVises/Images/Phones/Galaxy-S7-Edge.png";
+            Console.WriteLine(texto);
+            Console.WriteLine("------------------------------------------------------------------");
             string key = "yarr";
             EncryptionMethods e = new EncryptionMethods();
-            //string textoe = e.encrypt(texto, key);
-            //Console.WriteLine(textoe);
+            string textoe = e.encrypt(texto, key);
+            Console.WriteLine(textoe);
             Console.WriteLine("------------------------------------------------------------------");
-            string textodes = e.encrypt("8", key);
+            string textodes = e.decrypting(textoe, key);
             Console.WriteLine(textodes);
             //string ruta = "../Images/imagen.png";
             //Console.WriteLine(ruta.Length+"");

@@ -16,13 +16,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2016 09:51:32</publishTime>
     </File>
     <File Include="bin/Business.dll">
-      <publishTime>10/22/2016 16:35:28</publishTime>
+      <publishTime>10/23/2016 22:29:43</publishTime>
     </File>
     <File Include="bin/CoreVises.dll">
-      <publishTime>10/23/2016 15:36:23</publishTime>
+      <publishTime>10/23/2016 23:48:46</publishTime>
     </File>
     <File Include="bin/Data.dll">
-      <publishTime>10/22/2016 16:35:28</publishTime>
+      <publishTime>10/23/2016 22:29:43</publishTime>
     </File>
     <File Include="bin/Domain.dll">
       <publishTime>10/17/2016 11:05:11</publishTime>
@@ -55,7 +55,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2016 09:51:38</publishTime>
     </File>
     <File Include="bin/Reports.dll">
-      <publishTime>10/22/2016 16:35:28</publishTime>
+      <publishTime>10/23/2016 23:48:37</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>10/17/2016 09:51:38</publishTime>
@@ -103,7 +103,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2016 09:51:32</publishTime>
     </File>
     <File Include="index.aspx">
-      <publishTime>10/22/2016 22:21:46</publishTime>
+      <publishTime>10/24/2016 00:00:56</publishTime>
     </File>
     <File Include="JS/ai.0.22.9-build00167.js">
       <publishTime>10/17/2016 09:51:32</publishTime>
@@ -166,7 +166,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2016 09:51:33</publishTime>
     </File>
     <File Include="Style/custom.css">
-      <publishTime>10/17/2016 09:51:33</publishTime>
+      <publishTime>10/23/2016 16:19:14</publishTime>
     </File>
     <File Include="Style/font-awesome.css">
       <publishTime>10/17/2016 09:51:33</publishTime>
