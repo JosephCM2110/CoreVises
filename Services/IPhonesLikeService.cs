@@ -14,7 +14,9 @@ namespace Services
     {
         [OperationContract]
         [WebInvoke(Method = "GET",
-         ResponseFormat = WebMessageFormat.Json, UriTemplate = "getPhonesLike/{word}/{key}")]
+         ResponseFormat = WebMessageFormat.Json, 
+        UriTemplate = "getPhonesLike?word={word}&key={key}",
+         BodyStyle = WebMessageBodyStyle.Wrapped)] 
         string getPhonesLike(string word, string key);
     }
 }

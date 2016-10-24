@@ -232,7 +232,6 @@ namespace Data
         {
             //conexion con la bd
             SqlConnection sqlConn = new SqlConnection(this.connectionString);
-
             //string sql
             string sqlSelect = "Select idPhone,TPhone.idBrand,model,OS,networkMode,internalMemory,externalMemory,pixels,flash,resolution,price,quantity,imagePhone "+
                 "From TPhone INNER JOIN TBrand ON TPhone.idBrand = TBrand.idBrand Where model like '%" + word + "%'  OR name like '%" + word + "%';";
