@@ -76,7 +76,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:Button ID="btnAccept" runat="server" Text="Login" OnClick="btnAccept_Click" Height="49px" Width="485px" />
+                                <asp:Button ID="btnAccept" runat="server" Text="Login" OnClientClick="getPhones('d','yarr');" Height="49px" Width="485px" />
                             </td>
                         </tr>
                         <tr>
@@ -112,5 +112,23 @@
             </div>
         </div>
      </body>
+    <script>
+        function getPhones(wordC, keyC) {
+            alert('metodo');
+            $.ajax({
+                url: "http://localhost/Services/PhonesLikeService.svc/getPhonesLike/d/yarr",
+                type: 'GET',
+                datatype: 'json',
+                cache: false,
+                success: function (data) {
+                    data = JSON.parse(data);
+                    alert('entra');
+                },
+                error: function (status) {
+                alert('no sirve');
+            }
+            });
+        }
+    </script>
 </html>
 

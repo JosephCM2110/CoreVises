@@ -28,10 +28,10 @@ namespace Services
             int r = sb.insertSale(sale);
             sale.IdSale = r;
             string phonesQ = em.decrypting(phonesQuantities, key);
-            string[] phones = phonesQ.Split(',');
+            string[] phones = phonesQ.Split('#');
             for (int i=0; i<phones.Length; i++)
             {
-                string[] data = phones[i].Split('.');
+                string[] data = phones[i].Split(';');
                 Phone phone = pb.getPhoneById(Int32.Parse(data[0]));
                 PhoneSale ps = new PhoneSale(0, phone, sale, Int32.Parse(data[1]));
                 psb.insertPhoneSale(ps);

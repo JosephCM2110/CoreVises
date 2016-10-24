@@ -55,12 +55,12 @@ namespace Test
             //string texto = "23452.we,l,tr,r";
             //Console.WriteLine(texto);
             //Console.WriteLine("------------------------------------------------------------------");
-            string key = "me";
+            string key = "yarr";
             EncryptionMethods e = new EncryptionMethods();
             //string textoe = e.encrypt(texto, key);
             //Console.WriteLine(textoe);
             Console.WriteLine("------------------------------------------------------------------");
-            string textodes = e.encrypt("maria", key);
+            string textodes = e.encrypt("8", key);
             Console.WriteLine(textodes);
             //string ruta = "../Images/imagen.png";
             //Console.WriteLine(ruta.Length+"");
