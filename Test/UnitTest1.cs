@@ -52,10 +52,10 @@ namespace Test
             //Console.WriteLine(c.Model);
             //Console.ReadLine();
 
-            string texto = "http://localhost/CoreVises/Images/Phones/Galaxy-S7-Edge.png";
+            string texto = "20000";
             Console.WriteLine(texto);
             Console.WriteLine("------------------------------------------------------------------");
-            string key = "yarr";
+            string key = "YARR";
             EncryptionMethods e = new EncryptionMethods();
             string textoe = e.encrypt(texto, key);
             Console.WriteLine(textoe);

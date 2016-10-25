@@ -103,7 +103,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2016 09:51:32</publishTime>
     </File>
     <File Include="index.aspx">
-      <publishTime>10/24/2016 00:00:56</publishTime>
+      <publishTime>10/24/2016 09:22:38</publishTime>
     </File>
     <File Include="JS/ai.0.22.9-build00167.js">
       <publishTime>10/17/2016 09:51:32</publishTime>

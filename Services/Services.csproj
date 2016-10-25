@@ -116,7 +116,7 @@
     <Content Include="ClientService.svc" />
     <Content Include="PhoneService.svc" />
     <Content Include="PhonesLikeService.svc" />
-    <Content Include="SaleService.svc" />
+    <Content Include="SalePhoneService.svc" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
@@ -132,15 +132,15 @@
     <Compile Include="IClientService.cs" />
     <Compile Include="IPhoneService.cs" />
     <Compile Include="IPhonesLikeService.cs" />
-    <Compile Include="ISaleService.cs" />
+    <Compile Include="ISalePhoneService.cs" />
     <Compile Include="PhoneService.svc.cs">
       <DependentUpon>PhoneService.svc</DependentUpon>
     </Compile>
     <Compile Include="PhonesLikeService.svc.cs">
       <DependentUpon>PhonesLikeService.svc</DependentUpon>
     </Compile>
-    <Compile Include="SaleService.svc.cs">
-      <DependentUpon>SaleService.svc</DependentUpon>
+    <Compile Include="SalePhoneService.svc.cs">
+      <DependentUpon>SalePhoneService.svc</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
